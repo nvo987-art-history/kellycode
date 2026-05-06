@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly Code</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- GOLD SIDE LINES -->
+<div class="gold-line left"></div>
+<div class="gold-line right"></div>
+
+<!-- COOKIE -->
+<div class="cookie" id="cookie">
+    <span>
+        We use cookies to ensure a refined experience. 
+        Read our <a href="#">Privacy Policy</a>.
+    </span>
+    <button onclick="accept()">Accept</button>
+</div>
+
+<!-- HEADER -->
+<header>
+    <h1>Kelly Code</h1>
+    <p>by kellycode.us</p>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>The Kelly Code</h2>
+    <p class="tagline">Elegance. Strategy. Control.</p>
+</section>
+
+<!-- MAIN -->
+<main>
+
+    <section class="card reveal">
+        <h3>About</h3>
+        <p>
+            The Kelly Code is a modern philosophy of elegance, discipline, and strategic clarity.
+            Inspired by timeless presence, it transforms how individuals operate in a fast-moving world.
+        </p>
+    </section>
+
+    <section class="card reveal">
+        <h3>Principles</h3>
+        <ul>
+            <li>Control over chaos</li>
+            <li>Simplicity over noise</li>
+            <li>Presence over pressure</li>
+            <li>Precision over speed</li>
+        </ul>
+    </section>
+
+    <section class="card reveal">
+        <h3>Newsletter</h3>
+        <p>Receive insights on elegance, strategy, and modern discipline.</p>
+        <button class="btn">Join Now</button>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">Kelly Code</div>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <p class="copyright">© 2026 Kelly Code. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+function accept(){
+    document.getElementById("cookie").style.display = "none";
+}
+
+// reveal animation
+const reveals = document.querySelectorAll(".reveal");
+window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+</html> 
