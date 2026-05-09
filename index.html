@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelly Code</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelly Code</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- GOLD SIDE LINES -->
-<div class="gold-line left"></div>
-<div class="gold-line right"></div>
+  <div class="background-glow"></div>
 
-<!-- HEADER -->
-<header>
-    <h1>Kelly Code</h1>
-    <p>by kellycode.us</p>
-</header>
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="logo">Kelly Code</div>
 
-<!-- HERO -->
-<section class="hero">
-    <h2>The Kelly Code</h2>
-    <p class="tagline">Elegance. Strategy. Control.</p>
-</section>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#principles">Principles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<!-- MAIN -->
-<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content reveal">
+      <span class="hero-label">Strategic Philosophy</span>
 
-    <section class="card reveal">
-        <h3>About</h3>
-        <p>
-            The Kelly Code is a modern philosophy of elegance, discipline, and strategic clarity.
-            Inspired by timeless presence, it transforms how individuals operate in a fast-moving world.
-        </p>
+      <h1>
+        Elegance<br>
+        with Control.
+      </h1>
+
+      <p>
+        The Kelly Code is a modern philosophy built on clarity,
+        restraint, precision, and timeless presence.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#about" class="btn primary">Explore</a>
+        <a href="#principles" class="btn secondary">Principles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main>
+
+    <section id="about" class="glass-card reveal">
+      <div class="card-top"></div>
+
+      <h2>About</h2>
+
+      <p>
+        Kelly Code represents strategic calm in a chaotic world.
+        Built around discipline and refined execution, it promotes
+        a mindset where simplicity creates authority.
+      </p>
     </section>
 
-    <section class="card reveal">
-        <h3>Principles</h3>
-        <ul>
-            <li>Control over chaos</li>
-            <li>Simplicity over noise</li>
-            <li>Presence over pressure</li>
-            <li>Precision over speed</li>
-        </ul>
-    </section>
+    <section id="principles" class="glass-card reveal">
+      <div class="card-top"></div>
 
-</main>
+      <h2>Core Principles</h2>
 
-<!-- FOOTER -->
-<footer>
-    <div class="footer-inner">
-        <div class="footer-brand">Kelly Code</div>
-
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms</a>
-            <a href="#">Contact</a>
+      <div class="principles-grid">
+        <div class="principle-item">
+          <span>01</span>
+          <h3>Control</h3>
+          <p>Maintain direction under pressure.</p>
         </div>
 
-        <p class="copyright">© 2026 Kelly Code. All rights reserved.</p>
+        <div class="principle-item">
+          <span>02</span>
+          <h3>Simplicity</h3>
+          <p>Remove noise. Keep only essentials.</p>
+        </div>
+
+        <div class="principle-item">
+          <span>03</span>
+          <h3>Presence</h3>
+          <p>Operate with calm authority and clarity.</p>
+        </div>
+
+        <div class="principle-item">
+          <span>04</span>
+          <h3>Precision</h3>
+          <p>Move intentionally instead of reacting.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <h3>Kelly Code</h3>
+
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Instagram</a>
+      </div>
+
+      <p>© 2026 Kelly Code. All rights reserved.</p>
     </div>
-</footer>
+  </footer>
 
-<script>
-function accept(){
-    document.getElementById("cookie").style.display = "none";
-}
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
 
-// reveal animation
-const reveals = document.querySelectorAll(".reveal");
-window.addEventListener("scroll", () => {
-    reveals.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if(top < window.innerHeight - 100){
-            el.classList.add("active");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('active');
         }
+      });
+    }, {
+      threshold: 0.15
     });
-});
-</script>
+
+    reveals.forEach(el => observer.observe(el));
+  </script>
 
 </body>
-</html> 
+</html>
