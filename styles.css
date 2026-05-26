@@ -1,5 +1,6 @@
 /* =========================================
    PREMIUM DARK LUXURY UI — KELLY CODE
+   FULLY FIXED MOBILE + PREMIUM VERSION
 ========================================= */
 
 :root{
@@ -39,13 +40,17 @@ html{
 
 body{
     font-family:'Inter',sans-serif;
+
     background:
-        radial-gradient(circle at top right,
-        rgba(212,175,55,0.08),
-        transparent 35%),
+        radial-gradient(
+            circle at top right,
+            rgba(212,175,55,0.08),
+            transparent 35%
+        ),
         #050505;
 
     color:var(--text);
+
     overflow-x:hidden;
     min-height:100vh;
 
@@ -59,20 +64,24 @@ body{
 
 .background-glow{
     position:fixed;
+
     width:850px;
     height:850px;
 
     background:
-        radial-gradient(circle,
-        rgba(212,175,55,0.14) 0%,
-        rgba(212,175,55,0.04) 35%,
-        transparent 70%);
+        radial-gradient(
+            circle,
+            rgba(212,175,55,0.14) 0%,
+            rgba(212,175,55,0.04) 35%,
+            transparent 70%
+        );
 
     top:-320px;
     right:-260px;
 
     z-index:-1;
     pointer-events:none;
+
     filter:blur(10px);
 }
 
@@ -84,55 +93,72 @@ body{
     position:fixed;
     top:0;
     left:0;
+
     width:100%;
 
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
 
-    padding:24px 7%;
+    padding:20px 6%;
+
     z-index:1000;
 
-    background:rgba(5,5,5,0.72);
+    background:rgba(5,5,5,0.78);
 
     backdrop-filter:blur(20px);
     -webkit-backdrop-filter:blur(20px);
 
-    border-bottom:1px solid rgba(255,255,255,0.06);
+    border-bottom:1px solid rgba(255,255,255,0.05);
 }
+
+/* LOGO */
 
 .logo{
     font-family:'Cormorant Garamond',serif;
-    font-size:2.2rem;
+
+    font-size:2.15rem;
     font-weight:600;
 
     color:var(--gold);
 
     letter-spacing:.02em;
 
+    white-space:nowrap;
+    flex-shrink:0;
+
     text-shadow:
         0 0 20px rgba(212,175,55,0.18);
 }
 
-/* NAV */
+/* NAVIGATION */
 
 nav{
     display:flex;
     align-items:center;
-    gap:34px;
+
+    gap:28px;
+
+    flex-wrap:nowrap;
 }
 
 nav a{
     position:relative;
 
     color:#d7d7d7;
+
     text-decoration:none;
 
-    font-size:.95rem;
+    font-size:.92rem;
     font-weight:500;
+
     letter-spacing:.03em;
 
-    transition:.35s ease;
+    white-space:nowrap;
+
+    transition:
+        color .35s ease,
+        transform .35s ease;
 }
 
 /* PREMIUM UNDERLINE */
@@ -141,8 +167,9 @@ nav a::before{
     content:'';
 
     position:absolute;
+
     left:0;
-    bottom:-10px;
+    bottom:-8px;
 
     width:0;
     height:1px;
@@ -155,7 +182,8 @@ nav a::before{
             transparent
         );
 
-    transition:.4s cubic-bezier(.22,1,.36,1);
+    transition:
+        width .4s cubic-bezier(.22,1,.36,1);
 }
 
 nav a:hover{
@@ -178,38 +206,49 @@ nav a:hover::before{
     align-items:center;
 
     padding:
-        180px 7%
+        170px 7%
         120px;
+
+    position:relative;
 }
 
 .hero-content{
+    width:100%;
     max-width:980px;
 }
+
+/* LABEL */
 
 .hero-label{
     color:var(--gold);
 
     text-transform:uppercase;
+
     letter-spacing:.35em;
 
     font-size:.78rem;
     font-weight:600;
 
-    margin-bottom:22px;
+    margin-bottom:20px;
 }
+
+/* TITLE */
 
 .hero h1{
     font-family:'Cormorant Garamond',serif;
 
     font-size:clamp(4rem,10vw,7.5rem);
 
-    line-height:.9;
+    line-height:1.02;
+
     letter-spacing:-0.04em;
 
-    margin-bottom:34px;
+    margin-bottom:32px;
 
     text-wrap:balance;
 }
+
+/* TEXT */
 
 .hero p{
     max-width:720px;
@@ -249,10 +288,14 @@ nav a:hover::before{
 
     overflow:hidden;
 
-    transition:.35s ease;
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        background .35s ease;
 }
 
-/* PRIMARY */
+/* PRIMARY BUTTON */
 
 .primary{
     background:
@@ -275,7 +318,7 @@ nav a:hover::before{
         0 18px 55px rgba(212,175,55,0.26);
 }
 
-/* SECONDARY */
+/* SECONDARY BUTTON */
 
 .secondary{
     background:rgba(255,255,255,0.03);
@@ -305,6 +348,7 @@ main{
 
     display:flex;
     flex-direction:column;
+
     gap:44px;
 
     padding-bottom:120px;
@@ -343,12 +387,13 @@ main{
     box-shadow:var(--shadow);
 }
 
-/* GOLD TOP LIGHT */
+/* TOP GOLD LINE */
 
 .glass-card::before{
     content:'';
 
     position:absolute;
+
     top:0;
     left:0;
 
@@ -364,7 +409,7 @@ main{
         );
 }
 
-/* SOFT GOLD GLOW */
+/* SOFT GLOW */
 
 .glass-card::after{
     content:'';
@@ -375,9 +420,11 @@ main{
     height:300px;
 
     background:
-        radial-gradient(circle,
-        rgba(212,175,55,0.08),
-        transparent 70%);
+        radial-gradient(
+            circle,
+            rgba(212,175,55,0.08),
+            transparent 70%
+        );
 
     top:-100px;
     right:-100px;
@@ -398,16 +445,21 @@ main{
         );
 }
 
+/* CARD TITLE */
+
 .glass-card h2{
     font-family:'Cormorant Garamond',serif;
 
-    font-size:3.2rem;
-    line-height:1;
+    font-size:3.1rem;
 
-    margin-bottom:26px;
+    line-height:1.05;
+
+    margin-bottom:24px;
 
     letter-spacing:-0.03em;
 }
+
+/* CARD TEXT */
 
 .glass-card p{
     color:#b8b8b8;
@@ -419,7 +471,7 @@ main{
 }
 
 /* =========================================
-   PRINCIPLES
+   PRINCIPLES GRID
 ========================================= */
 
 .principles-grid{
@@ -473,6 +525,7 @@ main{
     text-transform:uppercase;
 
     font-size:.72rem;
+
     letter-spacing:.26em;
 }
 
@@ -557,6 +610,7 @@ main{
     content:'↗';
 
     font-size:.95rem;
+
     opacity:.9;
 }
 
@@ -578,13 +632,14 @@ main{
         0 14px 40px rgba(212,175,55,0.14);
 }
 
-/* LABEL */
+/* HASH LABEL */
 
 .hash-label{
     margin-top:2rem;
     margin-bottom:.8rem;
 
     font-size:.72rem;
+
     letter-spacing:.34em;
 
     text-transform:uppercase;
@@ -592,7 +647,7 @@ main{
     color:rgba(255,255,255,0.42);
 }
 
-/* HASH */
+/* HASH VALUE */
 
 .hash-value{
     display:block;
@@ -600,6 +655,7 @@ main{
     color:#d2d2d2;
 
     line-height:2;
+
     font-size:.84rem;
 
     word-break:break-word;
@@ -650,6 +706,7 @@ footer{
     position:relative;
 
     color:#bdbdbd;
+
     text-decoration:none;
 
     transition:.3s ease;
@@ -663,15 +720,17 @@ footer p{
     color:#727272;
 
     font-size:.9rem;
+
     line-height:1.8;
 }
 
 /* =========================================
-   REVEAL
+   REVEAL ANIMATION
 ========================================= */
 
 .reveal{
     opacity:0;
+
     transform:translateY(50px);
 
     transition:
@@ -681,80 +740,117 @@ footer p{
 
 .reveal.active{
     opacity:1;
+
     transform:translateY(0);
 }
 
 /* =========================================
-   MOBILE
+   MOBILE OPTIMIZATION
 ========================================= */
 
 @media(max-width:768px){
 
+    /* NAVBAR */
+
     .navbar{
-        padding:18px 5%;
+        padding:16px 5%;
     }
 
     .logo{
-        font-size:1.8rem;
+        font-size:1.65rem;
     }
 
     nav{
-        gap:18px;
+        gap:14px;
     }
 
     nav a{
-        font-size:.8rem;
+        font-size:.78rem;
     }
 
+    /* HERO */
+
     .hero{
+        min-height:auto;
+
         padding:
-            150px 6%
+            170px 6%
             90px;
     }
 
+    .hero-content{
+        width:100%;
+    }
+
     .hero h1{
-        line-height:.95;
+        font-size:4.2rem;
+
+        line-height:.96;
+
+        margin-bottom:24px;
     }
 
     .hero p{
-        font-size:1rem;
+        font-size:.98rem;
+
         line-height:1.9;
     }
 
+    /* BUTTONS */
+
     .hero-buttons{
         flex-direction:column;
-        align-items:flex-start;
+
+        align-items:stretch;
+
+        gap:14px;
     }
 
     .btn{
         width:100%;
     }
 
+    /* CARDS */
+
     .glass-card{
         padding:36px 24px;
+
         border-radius:26px;
     }
 
     .glass-card h2{
-        font-size:2.4rem;
+        font-size:2.35rem;
+
+        line-height:1.08;
     }
 
     .glass-card p{
         font-size:.96rem;
+
+        line-height:1.9;
     }
+
+    /* GRID */
 
     .principles-grid{
         grid-template-columns:1fr;
     }
 
+    /* LINK */
+
     .spec-link{
         width:100%;
+
         justify-content:center;
+
         text-align:center;
     }
 
+    /* HASH */
+
     .hash-value{
         font-size:.78rem;
+
         line-height:1.8;
     }
-    }
+       }
