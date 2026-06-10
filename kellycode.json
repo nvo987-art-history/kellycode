@@ -1,0 +1,118 @@
+{
+  "name": "Kelly Code",
+  "version": "1.0",
+  "author": "Nicholas Van-Orton",
+  "title": "Kelly Code White Paper",
+  "theories": {
+    "v1": {
+      "name": "Kelly Code V1",
+      "title": "The Theory of Recognizability",
+      "core_thesis": [
+        "Recognizability precedes trust.",
+        "Trust precedes influence.",
+        "Influence precedes lasting success."
+      ],
+      "components": [
+        "Visual Consistency",
+        "Communication Consistency",
+        "Behavioral Consistency",
+        "Symbolic Consistency"
+      ],
+      "case_studies": [
+        {
+          "subject": "Sonia Delaunay",
+          "focus": "Visual Consistency"
+        },
+        {
+          "subject": "Grace Kelly",
+          "focus": "Visual Consistency"
+        },
+        {
+          "subject": "Steve Jobs",
+          "focus": "Visual Consistency"
+        },
+        {
+          "subject": "Coco Chanel",
+          "focus": "Visual Consistency"
+        }
+      ]
+    },
+    "v2": {
+      "name": "Kelly Code V2",
+      "title": "The Theory of Portability",
+      "core_thesis": "The true value of identity is measured not by its creation, but by its transferability.",
+      "definition": "Portability is the ability of an identity to preserve its recognizability and meaning within a new environment.",
+      "levels": [
+        {
+          "name": "Platform Transition",
+          "definition": "The identity moves into a new medium."
+        },
+        {
+          "name": "Role Transition",
+          "definition": "The identity acquires a new social role."
+        },
+        {
+          "name": "System Transition",
+          "definition": "The identity exits a collective structure."
+        }
+      ],
+      "case_studies": [
+        {
+          "subject": "Sonia Delaunay",
+          "category": "Platform Transition",
+          "transition": [
+            "Painting",
+            "Fashion",
+            "Design"
+          ]
+        },
+        {
+          "subject": "Grace Kelly",
+          "category": "Role Transition",
+          "transition": [
+            "Film Star",
+            "Princess",
+            "Institution"
+          ]
+        },
+        {
+          "subject": "Emma Bunton",
+          "category": "System Transition",
+          "transition": [
+            "Spice Girls",
+            "Solo Career"
+          ]
+        }
+      ]
+    }
+  },
+  "formula": {
+    "recognizable_identity": {
+      "inputs": [
+        "Visual Consistency",
+        "Communication Consistency",
+        "Behavioral Consistency",
+        "Symbolic Meaning"
+      ],
+      "output": "Recognizable Identity"
+    },
+    "timeless_brand": {
+      "inputs": [
+        "Recognizable Identity",
+        "Portability"
+      ],
+      "output": "Timeless Brand"
+    }
+  },
+  "conclusion": {
+    "statement": "The Kelly Code is a theory of identity survival.",
+    "v1": "Explains how someone becomes recognizable.",
+    "v2": "Explains how someone becomes timeless.",
+    "final_principle": "Identity becomes historically significant when its code survives its original context."
+  },
+  "metadata": {
+    "website": "https://kellycode.us",
+    "did": "did:web:identity.nvo987.us",
+    "contact": "nvo@nvo987.us"
+  }
+}
