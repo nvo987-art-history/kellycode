@@ -1,144 +1,106 @@
-/* ==========================================
-   GOOGLE FONTS
-   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
-/* ==========================================
-   ROOT
-   ========================================== */
-
-:root{
-
---gold:#D4AF37;
---gold-light:#F3D77A;
---gold-dark:#A87C12;
-
---bg:#050505;
---bg-soft:#0b0b0b;
-
---card:#101010;
-
---text:#ffffff;
---muted:#bdbdbd;
-
---radius:32px;
-
-}
-
-/* ==========================================
+/* =========================
    RESET
-   ========================================== */
+========================= */
 
 *{
-
 margin:0;
 padding:0;
-
 box-sizing:border-box;
-
 }
 
 html{
-
 scroll-behavior:smooth;
-
 }
 
 body{
 
-background:
-radial-gradient(
-circle at top left,
-rgba(212,175,55,.05),
-transparent 35%
-),
-
-radial-gradient(
-circle at bottom right,
-rgba(212,175,55,.04),
-transparent 35%
-),
-
-#050505;
+background:#050505;
 
 color:#ffffff;
 
-font-family:
-'Inter',
-sans-serif;
-
-overflow-x:hidden;
-
-position:relative;
+font-family:'Inter',sans-serif;
 
 line-height:1.8;
 
+overflow-x:hidden;
+
+min-height:100vh;
 }
 
-/* ==========================================
-   CONTAINER
-   ========================================== */
+/* =========================
+   GOLD PALETTE
+========================= */
 
-.container{
+:root{
 
-width:min(1180px,92%);
+--gold:#D4AF37;
 
-margin:auto;
+--gold-light:#F5DE8B;
 
-position:relative;
+--gold-dark:#9E7A17;
 
-z-index:2;
+--black:#050505;
+
+--black-soft:#101010;
+
+--card:#141414;
+
+--white:#ffffff;
+
+--text:#e8e8e8;
 
 }
 
-/* ==========================================
-   AMBIENT LIGHTS
-   ========================================== */
+/* =========================
+   BACKGROUND
+========================= */
 
-.ambient{
+body::before{
+
+content:"";
 
 position:fixed;
 
-border-radius:50%;
+inset:0;
+
+background:
+radial-gradient(
+circle at 20% 20%,
+rgba(212,175,55,.08),
+transparent 35%
+),
+radial-gradient(
+circle at 80% 30%,
+rgba(212,175,55,.05),
+transparent 40%
+),
+radial-gradient(
+circle at 50% 100%,
+rgba(212,175,55,.04),
+transparent 50%
+);
 
 pointer-events:none;
 
-filter:blur(130px);
-
-z-index:0;
-
+z-index:-1;
 }
 
-.ambient-one{
+/* =========================
+   CONTAINER
+========================= */
 
-width:500px;
-height:500px;
+.container{
 
-background:
-rgba(212,175,55,.10);
+width:min(1200px,92%);
 
-top:-150px;
-left:-150px;
-
+margin:auto;
 }
 
-.ambient-two{
-
-width:450px;
-height:450px;
-
-background:
-rgba(212,175,55,.08);
-
-right:-150px;
-bottom:-150px;
-
-}
-
-/* ==========================================
+/* =========================
    HERO
-   ========================================== */
+========================= */
 
 .hero{
 
@@ -150,169 +112,99 @@ align-items:center;
 
 justify-content:center;
 
-text-align:center;
-
 padding:120px 20px;
 
-position:relative;
-
-z-index:2;
-
+text-align:center;
 }
 
 .hero-inner{
 
-max-width:950px;
-
-margin:auto;
-
+max-width:900px;
 }
-
-/* ==========================================
-   EYEBROW
-   ========================================== */
 
 .eyebrow{
 
 display:inline-block;
 
-padding:12px 24px;
+padding:10px 22px;
+
+border:1px solid rgba(212,175,55,.25);
 
 border-radius:999px;
 
-border:
-1px solid rgba(212,175,55,.18);
-
-background:
-rgba(212,175,55,.05);
-
 color:var(--gold);
-
-font-size:.8rem;
-
-font-weight:600;
 
 letter-spacing:.3em;
 
 text-transform:uppercase;
 
+font-size:.75rem;
+
 margin-bottom:35px;
-
 }
-
-/* ==========================================
-   HERO TITLE
-   ========================================== */
 
 .hero h1{
 
-font-family:
-'Cormorant Garamond',
-serif;
+font-family:'Cormorant Garamond',serif;
 
-font-size:
-clamp(
-4rem,
-10vw,
-8rem
-);
+font-size:clamp(4rem,12vw,8rem);
 
 font-weight:700;
 
-line-height:.95;
-
 letter-spacing:.08em;
 
-margin-bottom:20px;
+color:var(--gold);
 
-background:
-linear-gradient(
-180deg,
-#fff6d4,
-#D4AF37,
-#A87C12
-);
+text-transform:uppercase;
 
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+margin-bottom:15px;
 
 text-shadow:
-0 0 30px rgba(212,175,55,.20);
-
+0 0 30px rgba(212,175,55,.15);
 }
-
-/* ==========================================
-   HERO SUBTITLE
-   ========================================== */
 
 .hero h2{
 
-font-family:
-'Cormorant Garamond',
-serif;
+font-family:'Cormorant Garamond',serif;
 
-font-size:
-clamp(
-1.4rem,
-4vw,
-2.4rem
-);
+font-size:clamp(1.6rem,4vw,2.8rem);
 
-font-weight:500;
+font-weight:400;
+
+color:#f7f7f7;
 
 line-height:1.4;
 
-color:#e9d9a1;
-
 margin-bottom:35px;
-
 }
-
-/* ==========================================
-   GOLD LINE
-   ========================================== */
 
 .hero-line{
 
 width:180px;
+
 height:2px;
 
-margin:0 auto 35px;
+margin:40px auto;
 
 background:
 linear-gradient(
 90deg,
 transparent,
-#D4AF37,
+var(--gold),
 transparent
 );
-
-box-shadow:
-0 0 20px rgba(212,175,55,.35);
-
 }
-
-/* ==========================================
-   HERO INTRO
-   ========================================== */
 
 .hero-intro{
 
-max-width:760px;
+max-width:750px;
 
 margin:auto;
 
-font-size:1.1rem;
+font-size:1.15rem;
 
-line-height:2;
-
-color:#d9d9d9;
-
+color:#d6d6d6;
 }
-
-/* ==========================================
-   HERO META
-   ========================================== */
 
 .hero-meta{
 
@@ -322,51 +214,35 @@ justify-content:center;
 
 align-items:center;
 
-gap:18px;
+gap:20px;
 
-flex-wrap:wrap;
+margin-top:40px;
 
-margin-top:45px;
-
-color:#9e9e9e;
-
-font-size:.95rem;
-
-}
-
-.hero-meta strong{
-
-color:#ffffff;
-
-font-weight:600;
-
+color:#999;
 }
 
 .divider{
 
 width:50px;
+
 height:1px;
 
-background:
-rgba(212,175,55,.4);
-
+background:var(--gold);
 }
-
-
-/* ==========================================
+/* =========================
    SECTIONS
-   ========================================== */
+========================= */
 
 .section{
 
-position:relative;
+padding:60px 0;
 
-padding:50px 0;
+position:relative;
 }
 
-/* ==========================================
-   PAPER CARDS
-   ========================================== */
+/* =========================
+   PREMIUM CARDS
+========================= */
 
 .paper-card{
 
@@ -375,30 +251,40 @@ position:relative;
 background:
 linear-gradient(
 180deg,
-rgba(18,18,18,.98),
-rgba(8,8,8,.98)
+rgba(20,20,20,.98),
+rgba(10,10,10,.98)
 );
 
-border:1px solid rgba(212,175,55,.15);
+border:1px solid
+rgba(212,175,55,.15);
 
 border-radius:32px;
 
-padding:40px;
+padding:45px;
 
-margin-bottom:28px;
+margin-bottom:32px;
 
 overflow:hidden;
 
+backdrop-filter:blur(20px);
+
 box-shadow:
-0 25px 60px rgba(0,0,0,.6);
+0 20px 60px rgba(0,0,0,.7);
 
 transition:
-transform .35s ease,
-border-color .35s ease,
-box-shadow .35s ease;
+all .4s ease;
 }
 
-/* arany felső él */
+.paper-card:hover{
+
+transform:translateY(-8px);
+
+border-color:
+rgba(212,175,55,.4);
+
+box-shadow:
+0 35px 90px rgba(0,0,0,.8);
+}
 
 .paper-card::before{
 
@@ -410,7 +296,7 @@ top:0;
 left:0;
 
 width:100%;
-height:1px;
+height:2px;
 
 background:
 linear-gradient(
@@ -421,94 +307,58 @@ transparent
 );
 }
 
-/* finom arany fény */
-
 .paper-card::after{
 
 content:"";
 
 position:absolute;
 
-top:-150px;
-right:-150px;
+top:-200px;
+right:-200px;
 
-width:300px;
-height:300px;
+width:400px;
+height:400px;
 
 border-radius:50%;
 
 background:
 radial-gradient(
 circle,
-rgba(212,175,55,.06),
+rgba(212,175,55,.08),
 transparent 70%
 );
 
 pointer-events:none;
 }
 
-.paper-card:hover{
-
-transform:translateY(-6px);
-
-border-color:
-rgba(212,175,55,.35);
-
-box-shadow:
-0 30px 80px rgba(0,0,0,.7);
-}
-
-/* ==========================================
-   LABELS
-   ========================================== */
+/* =========================
+   LABEL
+========================= */
 
 .section-label{
 
-display:inline-flex;
+display:inline-block;
 
-align-items:center;
+font-size:.8rem;
 
-gap:12px;
-
-font-size:.78rem;
-
-font-weight:600;
-
-letter-spacing:.25em;
+letter-spacing:.3em;
 
 text-transform:uppercase;
 
 color:#D4AF37;
 
-margin-bottom:22px;
+margin-bottom:25px;
 }
 
-.section-label::before{
-
-content:"";
-
-width:35px;
-height:1px;
-
-background:#D4AF37;
-}
-
-/* ==========================================
+/* =========================
    HEADINGS
-   ========================================== */
+========================= */
 
 .paper-card h2{
 
-font-family:
-'Playfair Display',
-serif;
+font-family:'Cormorant Garamond',serif;
 
-font-size:
-clamp(
-2rem,
-5vw,
-3.4rem
-);
+font-size:clamp(2.3rem,5vw,4rem);
 
 font-weight:700;
 
@@ -516,74 +366,59 @@ line-height:1.1;
 
 color:#D4AF37;
 
-margin-bottom:22px;
+margin-bottom:25px;
 }
 
 .paper-card h3{
 
-font-family:
-'Playfair Display',
-serif;
+font-family:'Cormorant Garamond',serif;
 
-font-size:
-clamp(
-1.4rem,
-3vw,
-2rem
-);
+font-size:clamp(1.6rem,3vw,2.3rem);
 
 font-weight:600;
 
-line-height:1.25;
-
-margin-bottom:18px;
-
 color:#ffffff;
+
+margin-bottom:20px;
 }
 
 .paper-card h4{
 
-font-family:
-'Playfair Display',
-serif;
+font-family:'Cormorant Garamond',serif;
 
-font-size:1.1rem;
+font-size:1.3rem;
 
-font-weight:600;
+color:#F5DE8B;
 
-color:#f0d77a;
-
-margin-bottom:16px;
+margin-bottom:18px;
 }
 
-/* ==========================================
-   PARAGRAPHS
-   ========================================== */
+/* =========================
+   TEXT
+========================= */
 
 .paper-card p{
 
 font-size:1.05rem;
 
-line-height:1.95;
+line-height:2;
 
-color:#ededed;
+color:#e6e6e6;
 
 margin-bottom:18px;
 
 max-width:75ch;
 }
 
-/* ==========================================
-   LISTS
-   ========================================== */
+/* =========================
+   LIST
+========================= */
 
 .paper-card ul{
 
 list-style:none;
 
-padding:0;
-
-margin:24px 0;
+margin:25px 0;
 }
 
 .paper-card li{
@@ -595,6 +430,8 @@ padding-left:28px;
 margin-bottom:14px;
 
 color:#efefef;
+
+line-height:1.9;
 }
 
 .paper-card li::before{
@@ -608,9 +445,9 @@ left:0;
 color:#D4AF37;
 }
 
-/* ==========================================
-   EXAMPLE TAGS
-   ========================================== */
+/* =========================
+   EXAMPLES
+========================= */
 
 .example-box{
 
@@ -623,281 +460,41 @@ gap:12px;
 margin-top:25px;
 }
 
-.example-box strong{
-
-width:100%;
-
-color:#D4AF37;
-
-margin-bottom:6px;
-}
-
 .example-box span{
 
 padding:10px 18px;
 
 border-radius:999px;
 
-background:#161616;
+background:#1a1a1a;
 
 border:1px solid
 rgba(212,175,55,.18);
 
-font-size:.95rem;
-
-transition:.3s ease;
+color:#fff;
 }
 
-.example-box span:hover{
-
-background:#1c1c1c;
-
-border-color:
-rgba(212,175,55,.45);
-}
-/* ==========================================
-   STATEMENT BLOCK
-   ========================================== */
+/* =========================
+   STATEMENT
+========================= */
 
 .statement{
 
-position:relative;
+padding:45px;
 
 margin:35px 0;
 
-padding:40px;
-
 border-radius:28px;
 
-background:
-linear-gradient(
-135deg,
-rgba(212,175,55,.06),
-rgba(255,255,255,.02)
-);
-
-border:1px solid
-rgba(212,175,55,.18);
-
-font-family:
-'Playfair Display',
-serif;
-
-font-size:
-clamp(
-1.3rem,
-3vw,
-2rem
-);
-
-line-height:1.8;
-
 text-align:center;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:clamp(1.5rem,3vw,2.4rem);
+
+line-height:1.7;
 
 color:#fff;
-
-overflow:hidden;
-}
-
-.statement::before{
-
-content:"❝";
-
-position:absolute;
-
-top:-10px;
-left:25px;
-
-font-size:5rem;
-
-color:
-rgba(212,175,55,.15);
-
-font-family:serif;
-}
-
-.statement::after{
-
-content:"";
-
-position:absolute;
-
-bottom:0;
-left:50%;
-
-transform:translateX(-50%);
-
-width:140px;
-height:2px;
-
-background:
-linear-gradient(
-90deg,
-transparent,
-#D4AF37,
-transparent
-);
-}
-
-/* ==========================================
-   QUOTE PANEL
-   ========================================== */
-
-.quote-panel{
-
-position:relative;
-
-margin-top:30px;
-
-padding:32px;
-
-border-left:3px solid #D4AF37;
-
-background:
-rgba(255,255,255,.02);
-
-border-radius:0 20px 20px 0;
-}
-
-.quote-panel p{
-
-font-family:
-'Playfair Display',
-serif;
-
-font-size:1.2rem;
-
-color:#f7f7f7;
-
-margin-bottom:10px;
-}
-
-.quote-panel p:last-child{
-margin-bottom:0;
-}
-
-/* ==========================================
-   FORMULA CARDS
-   ========================================== */
-
-.formula-card{
-
-text-align:center;
-}
-
-.formula-card h3{
-
-color:#D4AF37;
-
-margin-bottom:35px;
-}
-
-.formula{
-
-display:flex;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-align-items:center;
-
-gap:18px;
-
-font-family:
-'Playfair Display',
-serif;
-
-font-size:
-clamp(
-1.1rem,
-2vw,
-1.5rem
-);
-
-line-height:1.6;
-
-color:white;
-}
-
-.formula span{
-
-font-size:2rem;
-
-font-weight:700;
-
-color:#D4AF37;
-}
-
-/* ==========================================
-   EQUATIONS
-   ========================================== */
-
-.equation-block{
-
-background:
-linear-gradient(
-180deg,
-#111,
-#0a0a0a
-);
-
-border:1px solid
-rgba(212,175,55,.15);
-
-border-radius:24px;
-
-padding:30px;
-
-margin-top:24px;
-}
-
-.equation-block h4{
-
-text-align:center;
-
-margin-bottom:20px;
-
-font-size:1.2rem;
-
-letter-spacing:.08em;
-
-text-transform:uppercase;
-}
-
-.equation-block p{
-
-text-align:center;
-
-font-family:
-'Playfair Display',
-serif;
-
-font-size:1.15rem;
-
-line-height:2.1;
-}
-
-.equation-block strong{
-
-color:#D4AF37;
-
-font-size:1.3rem;
-}
-
-/* ==========================================
-   FINAL PANEL
-   ========================================== */
-
-.final-panel{
-
-position:relative;
-
-overflow:hidden;
-
-padding:80px 50px;
-
-border-radius:40px;
 
 background:
 linear-gradient(
@@ -908,10 +505,118 @@ rgba(255,255,255,.02)
 
 border:1px solid
 rgba(212,175,55,.2);
+}
+
+/* =========================
+   QUOTE PANEL
+========================= */
+
+.quote-panel{
+
+padding:30px;
+
+margin-top:25px;
+
+border-left:3px solid #D4AF37;
+
+background:
+rgba(255,255,255,.03);
+
+border-radius:0 20px 20px 0;
+}
+
+.quote-panel p{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.3rem;
+
+color:#ffffff;
+}
+
+/* =========================
+   FORMULA CARD
+========================= */
+
+.formula-card{
+
+text-align:center;
+}
+
+.formula{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.4rem;
+
+color:white;
+}
+
+.formula span{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:48px;
+height:48px;
+
+border-radius:50%;
+
+background:
+rgba(212,175,55,.08);
+
+border:
+1px solid rgba(212,175,55,.2);
+
+color:#D4AF37;
+
+font-size:1.8rem;
+
+font-weight:700;
+}
+/* =========================
+   FINAL PANEL
+========================= */
+
+.final-panel{
+
+position:relative;
+
+padding:90px 50px;
+
+margin-top:50px;
+
+border-radius:40px;
+
+overflow:hidden;
 
 text-align:center;
 
-margin-top:40px;
+background:
+linear-gradient(
+135deg,
+rgba(212,175,55,.10),
+rgba(255,255,255,.02)
+);
+
+border:1px solid
+rgba(212,175,55,.25);
+
+box-shadow:
+0 30px 100px rgba(0,0,0,.75);
 }
 
 .final-panel::before{
@@ -920,47 +625,46 @@ content:"";
 
 position:absolute;
 
-top:-200px;
-right:-200px;
+top:-250px;
+right:-250px;
 
-width:450px;
-height:450px;
+width:500px;
+height:500px;
 
 border-radius:50%;
 
 background:
 radial-gradient(
 circle,
-rgba(212,175,55,.08),
+rgba(212,175,55,.12),
 transparent 70%
 );
+
+pointer-events:none;
 }
 
 .final-mark{
 
 font-size:.9rem;
 
-letter-spacing:.5em;
+letter-spacing:.6em;
+
+text-transform:uppercase;
 
 color:#D4AF37;
 
-margin-bottom:25px;
+margin-bottom:30px;
 }
 
 .final-panel h2{
 
-font-family:
-'Playfair Display',
-serif;
+font-family:'Cormorant Garamond',serif;
 
-font-size:
-clamp(
-2.4rem,
-7vw,
-5rem
-);
+font-size:clamp(2.8rem,7vw,5.5rem);
 
 line-height:1.1;
+
+color:white;
 
 margin-bottom:25px;
 }
@@ -972,7 +676,7 @@ color:#D4AF37;
 
 .final-panel p{
 
-max-width:700px;
+max-width:800px;
 
 margin:auto;
 
@@ -980,11 +684,64 @@ font-size:1.15rem;
 
 line-height:2;
 
-color:#ececec;
+color:#e8e8e8;
 }
-/* ==========================================
+
+/* =========================
+   EQUATION BLOCK
+========================= */
+
+.equation-block{
+
+padding:35px;
+
+margin-top:25px;
+
+border-radius:24px;
+
+background:
+linear-gradient(
+180deg,
+#151515,
+#0b0b0b
+);
+
+border:1px solid
+rgba(212,175,55,.15);
+}
+
+.equation-block h4{
+
+text-align:center;
+
+margin-bottom:20px;
+
+color:#D4AF37;
+
+letter-spacing:.12em;
+
+text-transform:uppercase;
+}
+
+.equation-block p{
+
+text-align:center;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.2rem;
+
+line-height:2;
+}
+
+.equation-block strong{
+
+color:#D4AF37;
+}
+
+/* =========================
    FOOTER
-   ========================================== */
+========================= */
 
 .footer{
 
@@ -994,8 +751,8 @@ margin-top:120px;
 
 padding:100px 20px 60px;
 
-border-top:1px solid
-rgba(212,175,55,.12);
+border-top:
+1px solid rgba(212,175,55,.15);
 
 background:
 linear-gradient(
@@ -1003,34 +760,6 @@ linear-gradient(
 transparent,
 rgba(212,175,55,.03)
 );
-
-overflow:hidden;
-}
-
-.footer::before{
-
-content:"";
-
-position:absolute;
-
-top:-250px;
-left:50%;
-
-transform:translateX(-50%);
-
-width:600px;
-height:600px;
-
-border-radius:50%;
-
-background:
-radial-gradient(
-circle,
-rgba(212,175,55,.05),
-transparent 70%
-);
-
-pointer-events:none;
 }
 
 .footer-inner{
@@ -1044,52 +773,46 @@ text-align:center;
 
 .footer h2{
 
-font-family:
-'Playfair Display',
-serif;
+font-family:'Cormorant Garamond',serif;
 
-font-size:
-clamp(
-2.5rem,
-8vw,
-5rem
-);
+font-size:clamp(3rem,8vw,6rem);
 
 font-weight:700;
 
 background:
 linear-gradient(
 180deg,
-#fff5c9,
-#d4af37,
-#a57a12
+#fff7d0,
+#D4AF37,
+#9e7a17
 );
 
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
 .footer-title{
 
-font-size:1rem;
+font-size:.95rem;
 
-letter-spacing:.12em;
+letter-spacing:.18em;
 
 text-transform:uppercase;
 
-color:#999;
+color:#9a9a9a;
 
-margin-bottom:40px;
+margin-bottom:35px;
 }
 
 .footer-divider{
 
-width:180px;
+width:220px;
+
 height:2px;
 
-margin:0 auto 40px;
+margin:0 auto 35px;
 
 background:
 linear-gradient(
@@ -1098,6 +821,9 @@ transparent,
 #D4AF37,
 transparent
 );
+
+box-shadow:
+0 0 20px rgba(212,175,55,.4);
 }
 
 .footer-links{
@@ -1106,16 +832,20 @@ display:flex;
 
 justify-content:center;
 
-align-items:center;
-
 gap:20px;
 
 flex-wrap:wrap;
 
-margin-bottom:40px;
+margin-bottom:35px;
 }
 
 .footer-links a{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
 
 padding:14px 24px;
 
@@ -1125,21 +855,21 @@ text-decoration:none;
 
 color:#D4AF37;
 
-border:1px solid
-rgba(212,175,55,.15);
+border:
+1px solid rgba(212,175,55,.15);
 
 background:
 rgba(255,255,255,.02);
 
-transition:.35s ease;
+transition:.35s;
 }
 
 .footer-links a:hover{
 
-transform:translateY(-3px);
+transform:translateY(-4px);
 
 border-color:
-rgba(212,175,55,.4);
+rgba(212,175,55,.45);
 
 background:
 rgba(212,175,55,.05);
@@ -1151,24 +881,23 @@ font-size:.9rem;
 
 line-height:2;
 
-color:#777;
+color:#7a7a7a;
 }
 
-/* ==========================================
-   SCROLL ANIMATION
-   ========================================== */
+/* =========================
+   ANIMATIONS
+========================= */
 
 .paper-card,
 .final-panel{
 
 opacity:0;
 
-transform:
-translateY(60px);
+transform:translateY(60px);
 
 transition:
-opacity .9s ease,
-transform .9s ease;
+opacity .8s ease,
+transform .8s ease;
 }
 
 .paper-card.visible,
@@ -1176,24 +905,12 @@ transform .9s ease;
 
 opacity:1;
 
-transform:
-translateY(0);
+transform:translateY(0);
 }
 
-/* ==========================================
-   GOLD TEXT SELECTION
-   ========================================== */
-
-::selection{
-
-background:#D4AF37;
-
-color:#000;
-}
-
-/* ==========================================
+/* =========================
    SCROLLBAR
-   ========================================== */
+========================= */
 
 ::-webkit-scrollbar{
 
@@ -1209,92 +926,62 @@ background:#080808;
 
 background:#D4AF37;
 
-border-radius:20px;
+border-radius:30px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+/* =========================
+   TEXT SELECTION
+========================= */
 
-background:#f0d77a;
+::selection{
+
+background:#D4AF37;
+
+color:#000;
 }
 
-/* ==========================================
+/* =========================
    MOBILE
-   ========================================== */
+========================= */
 
-@media (max-width:768px){
+@media(max-width:768px){
 
 .hero{
 
 min-height:auto;
 
-padding:
-90px 20px
-60px;
-}
-
-.hero h1{
-
-font-size:4rem;
-}
-
-.hero h2{
-
-font-size:1.6rem;
-
-line-height:1.4;
-}
-
-.hero-intro{
-
-font-size:1rem;
+padding:90px 20px 70px;
 }
 
 .hero-meta{
-
-gap:12px;
-
-font-size:.9rem;
-}
-
-.section{
-
-padding:25px 0;
-}
-
-.paper-card{
-
-padding:26px;
-
-border-radius:24px;
-}
-
-.statement{
-
-padding:28px;
-
-font-size:1.15rem;
-}
-
-.quote-panel{
-
-padding:22px;
-}
-
-.formula{
 
 flex-direction:column;
 
 gap:10px;
 }
 
-.final-panel{
+.paper-card{
 
-padding:50px 25px;
+padding:28px;
+
+border-radius:24px;
 }
 
-.footer{
+.statement{
 
-padding:80px 20px 50px;
+padding:30px;
+
+font-size:1.2rem;
+}
+
+.formula{
+
+flex-direction:column;
+}
+
+.final-panel{
+
+padding:55px 25px;
 }
 
 .footer-links{
@@ -1307,272 +994,4 @@ flex-direction:column;
 width:100%;
 max-width:320px;
 }
-}
-
-/* ==========================================
-   LARGE SCREENS
-   ========================================== */
-
-@media (min-width:1400px){
-
-.container{
-
-max-width:1280px;
-}
-
-.paper-card{
-
-padding:50px;
-}
-
-.paper-card p{
-
-font-size:1.1rem;
-}
-
-.hero-intro{
-
-font-size:1.25rem;
-}
-}
-/* ==========================================
-   PREMIUM DETAILS
-   ========================================== */
-
-.paper-card h2,
-.paper-card h3,
-.paper-card h4,
-.hero h1,
-.hero h2,
-.footer h2{
-
-text-wrap:balance;
-}
-
-.paper-card p{
-
-text-wrap:pretty;
-}
-
-/* ==========================================
-   GOLD ACCENT LINE
-   ========================================== */
-
-.paper-card h2::after{
-
-content:"";
-
-display:block;
-
-width:70px;
-height:2px;
-
-margin-top:14px;
-
-background:
-linear-gradient(
-90deg,
-#D4AF37,
-transparent
-);
-}
-
-/* ==========================================
-   LUXURY CARD CORNERS
-   ========================================== */
-
-.paper-card{
-
-isolation:isolate;
-}
-
-.paper-card .corner{
-
-display:none;
-}
-
-.paper-card::marker{
-display:none;
-}
-
-/* ==========================================
-   GLASS GOLD OVERLAY
-   ========================================== */
-
-.paper-card:hover::after{
-
-opacity:1;
-}
-
-.paper-card::after{
-
-transition:opacity .4s ease;
-
-opacity:.6;
-}
-
-/* ==========================================
-   HERO GOLD GLOW
-   ========================================== */
-
-.hero h1{
-
-text-shadow:
-0 0 25px rgba(212,175,55,.15),
-0 0 50px rgba(212,175,55,.08);
-}
-
-/* ==========================================
-   FORMULA EMPHASIS
-   ========================================== */
-
-.formula{
-
-padding:20px;
-}
-
-.formula span{
-
-display:inline-flex;
-
-align-items:center;
-justify-content:center;
-
-width:44px;
-height:44px;
-
-border-radius:50%;
-
-background:
-rgba(212,175,55,.08);
-
-border:
-1px solid rgba(212,175,55,.15);
-}
-
-/* ==========================================
-   QUOTE GLOW
-   ========================================== */
-
-.quote-panel{
-
-box-shadow:
-inset 3px 0 0 #D4AF37;
-}
-
-/* ==========================================
-   ELEGANT LINKS
-   ========================================== */
-
-a{
-
-color:#D4AF37;
-
-transition:.3s ease;
-}
-
-a:hover{
-
-color:#f0d77a;
-}
-
-/* ==========================================
-   PREMIUM LISTS
-   ========================================== */
-
-.paper-card li{
-
-line-height:1.9;
-}
-
-/* ==========================================
-   GOLD DIVIDER BETWEEN SECTIONS
-   ========================================== */
-
-.section + .section{
-
-position:relative;
-}
-
-.section + .section::before{
-
-content:"";
-
-display:block;
-
-width:120px;
-height:1px;
-
-margin:0 auto 40px;
-
-background:
-linear-gradient(
-90deg,
-transparent,
-rgba(212,175,55,.25),
-transparent
-);
-}
-
-/* ==========================================
-   FINAL PANEL GOLD BORDER
-   ========================================== */
-
-.final-panel{
-
-box-shadow:
-0 0 0 1px rgba(212,175,55,.12),
-0 30px 80px rgba(0,0,0,.6);
-}
-
-/* ==========================================
-   FOOTER GOLD GLOW
-   ========================================== */
-
-.footer-divider{
-
-box-shadow:
-0 0 20px rgba(212,175,55,.35);
-}
-
-/* ==========================================
-   ULTRA MOBILE
-   ========================================== */
-
-@media (max-width:480px){
-
-.hero h1{
-
-font-size:3rem;
-}
-
-.hero h2{
-
-font-size:1.25rem;
-}
-
-.paper-card{
-
-padding:22px;
-}
-
-.paper-card h2{
-
-font-size:1.8rem;
-}
-
-.paper-card h3{
-
-font-size:1.35rem;
-}
-
-.statement{
-
-font-size:1.05rem;
-}
-
-.final-panel h2{
-
-font-size:2rem;
-}
-}
+   }
