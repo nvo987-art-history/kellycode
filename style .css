@@ -1,4 +1,359 @@
 /* ==========================================
+   GOOGLE FONTS
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   ROOT
+   ========================================== */
+
+:root{
+
+--gold:#D4AF37;
+--gold-light:#F3D77A;
+--gold-dark:#A87C12;
+
+--bg:#050505;
+--bg-soft:#0b0b0b;
+
+--card:#101010;
+
+--text:#ffffff;
+--muted:#bdbdbd;
+
+--radius:32px;
+
+}
+
+/* ==========================================
+   RESET
+   ========================================== */
+
+*{
+
+margin:0;
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:
+radial-gradient(
+circle at top left,
+rgba(212,175,55,.05),
+transparent 35%
+),
+
+radial-gradient(
+circle at bottom right,
+rgba(212,175,55,.04),
+transparent 35%
+),
+
+#050505;
+
+color:#ffffff;
+
+font-family:
+'Inter',
+sans-serif;
+
+overflow-x:hidden;
+
+position:relative;
+
+line-height:1.8;
+
+}
+
+/* ==========================================
+   CONTAINER
+   ========================================== */
+
+.container{
+
+width:min(1180px,92%);
+
+margin:auto;
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* ==========================================
+   AMBIENT LIGHTS
+   ========================================== */
+
+.ambient{
+
+position:fixed;
+
+border-radius:50%;
+
+pointer-events:none;
+
+filter:blur(130px);
+
+z-index:0;
+
+}
+
+.ambient-one{
+
+width:500px;
+height:500px;
+
+background:
+rgba(212,175,55,.10);
+
+top:-150px;
+left:-150px;
+
+}
+
+.ambient-two{
+
+width:450px;
+height:450px;
+
+background:
+rgba(212,175,55,.08);
+
+right:-150px;
+bottom:-150px;
+
+}
+
+/* ==========================================
+   HERO
+   ========================================== */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:120px 20px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.hero-inner{
+
+max-width:950px;
+
+margin:auto;
+
+}
+
+/* ==========================================
+   EYEBROW
+   ========================================== */
+
+.eyebrow{
+
+display:inline-block;
+
+padding:12px 24px;
+
+border-radius:999px;
+
+border:
+1px solid rgba(212,175,55,.18);
+
+background:
+rgba(212,175,55,.05);
+
+color:var(--gold);
+
+font-size:.8rem;
+
+font-weight:600;
+
+letter-spacing:.3em;
+
+text-transform:uppercase;
+
+margin-bottom:35px;
+
+}
+
+/* ==========================================
+   HERO TITLE
+   ========================================== */
+
+.hero h1{
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:
+clamp(
+4rem,
+10vw,
+8rem
+);
+
+font-weight:700;
+
+line-height:.95;
+
+letter-spacing:.08em;
+
+margin-bottom:20px;
+
+background:
+linear-gradient(
+180deg,
+#fff6d4,
+#D4AF37,
+#A87C12
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 30px rgba(212,175,55,.20);
+
+}
+
+/* ==========================================
+   HERO SUBTITLE
+   ========================================== */
+
+.hero h2{
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:
+clamp(
+1.4rem,
+4vw,
+2.4rem
+);
+
+font-weight:500;
+
+line-height:1.4;
+
+color:#e9d9a1;
+
+margin-bottom:35px;
+
+}
+
+/* ==========================================
+   GOLD LINE
+   ========================================== */
+
+.hero-line{
+
+width:180px;
+height:2px;
+
+margin:0 auto 35px;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+#D4AF37,
+transparent
+);
+
+box-shadow:
+0 0 20px rgba(212,175,55,.35);
+
+}
+
+/* ==========================================
+   HERO INTRO
+   ========================================== */
+
+.hero-intro{
+
+max-width:760px;
+
+margin:auto;
+
+font-size:1.1rem;
+
+line-height:2;
+
+color:#d9d9d9;
+
+}
+
+/* ==========================================
+   HERO META
+   ========================================== */
+
+.hero-meta{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+margin-top:45px;
+
+color:#9e9e9e;
+
+font-size:.95rem;
+
+}
+
+.hero-meta strong{
+
+color:#ffffff;
+
+font-weight:600;
+
+}
+
+.divider{
+
+width:50px;
+height:1px;
+
+background:
+rgba(212,175,55,.4);
+
+}
+
+
+/* ==========================================
    SECTIONS
    ========================================== */
 
