@@ -1,118 +1,177 @@
 {
   "name": "Kelly Code",
-  "version": "1.0",
+  "version": "2.0",
   "author": "Nicholas Van-Orton",
+  "publication_date": "2026-06-14",
   "title": "Kelly Code White Paper",
+
+  "identity_code": {
+    "definition": "A system of recurring elements that enables a person, organization, or institution to remain recognizable even when its name is absent.",
+    "components": [
+      "Visual Consistency",
+      "Communication Consistency",
+      "Behavioral Consistency",
+      "Symbolic Meaning"
+    ]
+  },
+
   "theories": {
+
     "v1": {
+
       "name": "Kelly Code V1",
+
       "title": "The Theory of Recognizability",
+
       "core_thesis": [
         "Recognizability precedes trust.",
         "Trust precedes influence.",
         "Influence precedes lasting success."
       ],
-      "components": [
-        "Visual Consistency",
-        "Communication Consistency",
-        "Behavioral Consistency",
-        "Symbolic Consistency"
-      ],
-      "case_studies": [
-        {
-          "subject": "Sonia Delaunay",
-          "focus": "Visual Consistency"
-        },
-        {
-          "subject": "Grace Kelly",
-          "focus": "Visual Consistency"
-        },
-        {
-          "subject": "Steve Jobs",
-          "focus": "Visual Consistency"
-        },
-        {
-          "subject": "Coco Chanel",
-          "focus": "Visual Consistency"
-        }
-      ]
+
+      "formula": {
+        "inputs": [
+          "Visual Consistency",
+          "Communication Consistency",
+          "Behavioral Consistency",
+          "Symbolic Meaning"
+        ],
+        "output": "Recognizable Identity"
+      },
+
+      "limitation": "Recognizability alone does not explain long-term identity survival."
     },
+
     "v2": {
+
       "name": "Kelly Code V2",
+
       "title": "The Theory of Portability",
+
       "core_thesis": "The true value of identity is measured not by its creation, but by its transferability.",
-      "definition": "Portability is the ability of an identity to preserve its recognizability and meaning within a new environment.",
+
+      "definition": "Portability is the ability of an Identity Code to preserve recognizability and meaning across environmental transitions.",
+
       "levels": [
+
         {
           "name": "Platform Transition",
-          "definition": "The identity moves into a new medium."
+          "definition": "Identity moves into a new medium."
         },
+
         {
           "name": "Role Transition",
-          "definition": "The identity acquires a new social role."
+          "definition": "Identity acquires a new social role."
         },
+
         {
           "name": "System Transition",
-          "definition": "The identity exits a collective structure."
+          "definition": "Identity exits a collective structure."
         }
+
       ],
-      "case_studies": [
-        {
-          "subject": "Sonia Delaunay",
-          "category": "Platform Transition",
-          "transition": [
-            "Painting",
-            "Fashion",
-            "Design"
-          ]
-        },
-        {
-          "subject": "Grace Kelly",
-          "category": "Role Transition",
-          "transition": [
-            "Film Star",
-            "Princess",
-            "Institution"
-          ]
-        },
-        {
-          "subject": "Emma Bunton",
-          "category": "System Transition",
-          "transition": [
-            "Spice Girls",
-            "Solo Career"
-          ]
-        }
-      ]
+
+      "law_of_portability": "The more different environments in which the same Identity Code remains recognizable, the stronger the identity."
     }
+
   },
-  "formula": {
-    "recognizable_identity": {
-      "inputs": [
-        "Visual Consistency",
-        "Communication Consistency",
-        "Behavioral Consistency",
-        "Symbolic Meaning"
-      ],
-      "output": "Recognizable Identity"
-    },
-    "timeless_brand": {
-      "inputs": [
-        "Recognizable Identity",
-        "Portability"
-      ],
-      "output": "Timeless Brand"
-    }
+
+  "identity_survival_model": [
+
+    "Recognizability",
+
+    "Trust",
+
+    "Influence",
+
+    "Portability",
+
+    "Historical Survival"
+
+  ],
+
+  "empirical_studies": {
+
+    "v1": [
+
+      {
+        "title": "Grace Kelly and Emma Bunton",
+        "focus": "Recognizability"
+      },
+
+      {
+        "title": "Sonia Delaunay and Alfred Hitchcock",
+        "focus": "Recognizability"
+      }
+
+    ],
+
+    "v2": [
+
+      {
+        "subject": "Sonia Delaunay",
+        "category": "Platform Transition",
+        "transition": [
+          "Painting",
+          "Fashion",
+          "Design"
+        ]
+      },
+
+      {
+        "subject": "Grace Kelly",
+        "category": "Role Transition",
+        "transition": [
+          "Film Star",
+          "Princess",
+          "Institution"
+        ]
+      },
+
+      {
+        "subject": "Emma Bunton",
+        "category": "System Transition",
+        "transition": [
+          "Spice Girls",
+          "Solo Career"
+        ]
+      }
+
+    ]
+
   },
+
   "conclusion": {
+
     "statement": "The Kelly Code is a theory of identity survival.",
+
     "v1": "Explains how someone becomes recognizable.",
+
     "v2": "Explains how someone becomes timeless.",
+
     "final_principle": "Identity becomes historically significant when its code survives its original context."
   },
+
+  "registry": {
+
+    "white_paper": "https://kellycode.us",
+
+    "studies": "https://studies.kellycode.us",
+
+    "did": "did:web:identity.nvo987.us"
+
+  },
+
   "metadata": {
-    "website": "https://kellycode.us",
-    "did": "did:web:identity.nvo987.us",
-    "contact": "nvo@nvo987.us"
+
+    "author": "Nicholas Van-Orton",
+
+    "identifier": "NVO987",
+
+    "contact": "contract@kellycode.us",
+
+    "license": "Kelly Code Framework",
+
+    "status": "Official"
   }
 }
