@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "https://kellycode.us",
+  "name": "Kelly Code",
+  "alternateName": "The Theory of Recognizability & The Theory of Portability",
+  "author": {
+    "@type": "Person",
+    "name": "Nicholas Van-Orton"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Nicholas Van-Orton"
+  },
+  "dateCreated": "2026-06-15",
+  "dateModified": "2026-06-15",
+  "version": "2.0",
+  "identifier": "NVO987",
+  "url": "https://kellycode.us",
+  "description": "The Kelly Code is an identity theory developed by Nicholas Van-Orton. Kelly Code V1 explains recognizability. Kelly Code V2 explains portability and long-term identity survival.",
+  "keywords": [
+    "Kelly Code",
+    "Identity Theory",
+    "Recognizability",
+    "Portability",
+    "Personal Branding",
+    "Visual Identity",
+    "Brand Strategy",
+    "Identity Systems",
+    "Cultural Theory"
+  ],
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Person",
+    "name": "Nicholas Van-Orton"
+  }
+}
