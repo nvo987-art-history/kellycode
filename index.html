@@ -1,1269 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kelly Code | The Theory of Recognizability & Portability | NVO987</title>
+<title>KELLY CODE | The Theory of Identity Survival</title>
 
-<meta name="description" content="The Kelly Code is an identity theory developed by Nicholas Van-Orton. Kelly Code V1 explains recognizability. Kelly Code V2 explains portability and long-term identity survival.">
-
-<meta name="keywords" content="
-Kelly Code,
-Identity Theory,
-Recognizability,
-Portability,
-Personal Branding,
-Visual Identity,
-Nicholas Van-Orton,
-Brand Strategy,
-Identity Systems,
-Cultural Theory">
-
-<meta name="author" content="Nicholas Van-Orton">
-
-<meta name="robots" content="index, follow">
-
-<meta name="theme-color" content="#050505">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kelly Code">
-<meta property="og:description" content="The Theory of Recognizability & The Theory of Portability">
-<meta property="og:url" content="https://kellycode.us">
-<meta property="og:site_name" content="Kelly Code">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kelly Code">
-<meta name="twitter:description" content="Identity survives the context.">
-
-<link rel="canonical" href="https://kellycode.us">
+<meta name="description"
+      content="The Kelly Code is the theory of identity survival.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
 :root{
-
---gold:#D4AF37;
---gold-light:#F5D76E;
---gold-dark:#9A7A17;
-
---bg:#050505;
---card:#111111;
---text:#F5F5F5;
-
---border:rgba(212,175,55,.25);
-
+    --bg:#050505;
+    --bg2:#0d0d0d;
+    --gold:#d4af37;
+    --gold-soft:#b8942c;
+    --text:#f4f4f4;
+    --muted:#bdbdbd;
+    --card:rgba(255,255,255,.03);
+    --border:rgba(212,175,55,.18);
+    --radius:34px;
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(212,175,55,.08),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom,
+            rgba(212,175,55,.05),
+            transparent 50%
+        ),
+        var(--bg);
 
-background:var(--bg);
-color:var(--text);
-
-font-family:'EB Garamond', serif;
-
-line-height:1.9;
-overflow-x:hidden;
-
-}
-
-/* Premium Gold Glow Background */
-
-body::before{
-
-content:"";
-
-position:fixed;
-
-top:-50%;
-left:-50%;
-
-width:200%;
-height:200%;
-
-background:
-
-radial-gradient(
-circle at center,
-rgba(212,175,55,.04),
-transparent 40%
-),
-
-radial-gradient(
-circle at 70% 30%,
-rgba(212,175,55,.03),
-transparent 30%
-),
-
-radial-gradient(
-circle at 30% 70%,
-rgba(212,175,55,.03),
-transparent 30%
-);
-
-animation:goldAura 30s linear infinite;
-
-pointer-events:none;
-
-z-index:-1;
-
-}
-
-@keyframes goldAura{
-
-0%{
-transform:rotate(0deg);
-}
-
-100%{
-transform:rotate(360deg);
-}
-
+    color:var(--text);
+    font-family:'Cormorant Garamond',serif;
+    overflow-x:hidden;
 }
 
 a{
-text-decoration:none;
-color:var(--gold);
-transition:.3s;
+    text-decoration:none;
+    color:inherit;
 }
 
-a:hover{
-color:var(--gold-light);
+.progress{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0;
+    height:2px;
+    background:linear-gradient(
+        90deg,
+        #8b6b1b,
+        #d4af37,
+        #f0de8a
+    );
+    z-index:9999;
 }
 
-.container{
-
-width:min(1200px,92%);
-margin:auto;
-
+.top-nav{
+    position:fixed;
+    top:28px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:999;
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
-section{
-
-padding:90px 0;
-
+.top-nav a{
+    padding:12px 24px;
+    border-radius:40px;
+    border:1px solid rgba(212,175,55,.18);
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(16px);
+    font-family:'Inter',sans-serif;
+    font-size:.82rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    transition:.35s;
 }
 
-h1,h2,h3{
-
-font-family:'Cinzel', serif;
-font-weight:600;
-
-color:var(--gold);
-
-letter-spacing:1px;
-
-}
-
-h1{
-
-font-size:clamp(3rem,8vw,6rem);
-
-line-height:1.1;
-
-}
-
-h2{
-
-font-size:clamp(2rem,5vw,3rem);
-
-margin-bottom:30px;
-
-}
-
-h3{
-
-font-size:1.5rem;
-
-margin-bottom:15px;
-
-}
-
-p{
-
-font-size:1.15rem;
-
-margin-bottom:20px;
-
+.top-nav a:hover{
+    border-color:var(--gold);
+    background:rgba(212,175,55,.1);
 }
 
 .hero{
-
-min-height:100vh;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-text-align:center;
-
-position:relative;
-
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 30px 80px;
 }
 
-.hero::before{
-
-content:"";
-
-position:absolute;
-
-inset:0;
-
-background:
-radial-gradient(circle at center,
-rgba(212,175,55,.10),
-transparent 70%);
-
-pointer-events:none;
-
+.hero-inner{
+    width:min(900px,100%);
 }
 
-.hero-content{
-
-position:relative;
-z-index:2;
-
+.hero-line{
+    width:160px;
+    height:1px;
+    background:var(--gold);
+    margin:0 auto 40px;
 }
 
-.hero-subtitle{
-
-font-family:'Cormorant Garamond', serif;
-
-font-size:1.8rem;
-
-margin-top:25px;
-
-color:#ddd;
-
+.hero-label{
+    font-family:'Inter',sans-serif;
+    color:var(--gold-soft);
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:.85rem;
+    margin-bottom:28px;
 }
 
-.tagline{
-
-margin-top:40px;
-
-font-size:1.25rem;
-
-letter-spacing:2px;
-
-text-transform:uppercase;
-
-color:var(--gold-light);
-
+.hero h1{
+    font-family:'Cinzel',serif;
+    color:var(--gold);
+    font-size:clamp(3rem,9vw,7rem);
+    letter-spacing:10px;
+    line-height:1;
+    margin-bottom:24px;
 }
 
-.gold-line{
-
-width:120px;
-height:1px;
-
-background:var(--gold);
-
-margin:40px auto;
-
-}
-  .card-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(320px,1fr));
-
-gap:30px;
-
+.hero h2{
+    font-weight:300;
+    font-size:clamp(1.6rem,4vw,2.7rem);
+    margin-bottom:35px;
 }
 
-.card{
-
-background:var(--card);
-
-border:1px solid var(--border);
-
-border-radius:24px;
-
-padding:35px;
-
-transition:.4s ease;
-
-box-shadow:
-0 0 40px rgba(212,175,55,.05);
-
+.hero p{
+    max-width:760px;
+    margin:auto;
+    color:var(--muted);
+    font-size:1.3rem;
+    line-height:1.8;
 }
 
-.card:hover{
-
-transform:translateY(-6px);
-
-border-color:rgba(212,175,55,.55);
-
-box-shadow:
-0 0 60px rgba(212,175,55,.15);
-
+main{
+    width:min(1400px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:60px;
+    padding-bottom:120px;
 }
 
-.card-title{
-
-font-family:'Cinzel', serif;
-
-font-size:1.3rem;
-
-margin-bottom:15px;
-
-color:var(--gold);
-
+.toc{
+    position:sticky;
+    top:120px;
+    height:max-content;
 }
 
-.card p{
-
-color:#e5e5e5;
-
+.toc-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:28px;
+    padding:32px;
+    backdrop-filter:blur(18px);
 }
 
-ul{
-
-padding-left:25px;
-
+.toc-title{
+    color:var(--gold);
+    font-family:'Cinzel',serif;
+    margin-bottom:20px;
+    letter-spacing:2px;
 }
 
-li{
-
-margin-bottom:10px;
-
+.toc a{
+    display:block;
+    padding:10px 0;
+    color:#d7d7d7;
+    font-family:'Inter',sans-serif;
+    font-size:.92rem;
+    transition:.3s;
 }
 
-#formula .card{
-
-text-align:center;
-
-font-size:1.25rem;
-
+.toc a:hover{
+    color:var(--gold);
+    transform:translateX(8px);
 }
 
-#formula .card p{
-
-font-family:'Cormorant Garamond', serif;
-
-font-size:1.4rem;
-
+.article{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
 }
 
-.footer{
+.chapter{
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.04),
+            rgba(255,255,255,.02)
+        );
 
-padding:80px 20px;
+    border:1px solid rgba(212,175,55,.15);
+    border-radius:36px;
+    padding:70px;
+    backdrop-filter:blur(20px);
+}
 
-text-align:center;
+.chapter-number{
+    color:rgba(212,175,55,.55);
+    font-family:'Inter',sans-serif;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:.8rem;
+    margin-bottom:20px;
+}
 
-border-top:1px solid rgba(212,175,55,.15);
+.chapter h3{
+    color:var(--gold);
+    font-family:'Cinzel',serif;
+    font-size:2rem;
+    margin-bottom:30px;
+}
 
+.chapter p{
+    font-size:1.35rem;
+    line-height:2;
+    margin-bottom:28px;
+}
+
+.quote{
+    border-left:3px solid var(--gold);
+    padding:30px;
+    margin:40px 0;
+    background:rgba(212,175,55,.04);
+}
+
+.quote p{
+    color:var(--gold);
+    font-size:1.8rem;
+    margin:0;
+}
+
+footer{
+    border-top:1px solid rgba(212,175,55,.15);
+    padding:80px 30px;
+    text-align:center;
 }
 
 .footer-name{
-
-font-family:'Cinzel', serif;
-
-font-size:1.6rem;
-
-color:var(--gold);
-
-margin-bottom:20px;
-
+    color:var(--gold);
+    font-family:'Cinzel',serif;
+    margin-bottom:30px;
+    font-size:1.2rem;
 }
 
 .footer-links{
-
-display:flex;
-
-justify-content:center;
-
-gap:30px;
-
-flex-wrap:wrap;
-
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
 .footer-links a{
-
-font-size:1rem;
-
+    color:#d8d8d8;
 }
 
-@media(max-width:768px){
-
-section{
-padding:70px 0;
+.footer-links a:hover{
+    color:var(--gold);
 }
 
-.hero-subtitle{
-font-size:1.3rem;
+@media (max-width:1100px){
+
+    main{
+        grid-template-columns:1fr;
+    }
+
+    .toc{
+        position:relative;
+        top:auto;
+    }
 }
 
-.card{
-padding:28px;
-}
+@media (max-width:768px){
 
+    .chapter{
+        padding:36px 26px;
+    }
+
+    .chapter p{
+        font-size:1.12rem;
+        line-height:1.8;
+    }
+
+    .quote p{
+        font-size:1.4rem;
+    }
+
+    .top-nav{
+        width:95%;
+    }
 }
 
 </style>
-  
 </head>
 
 <body>
 
-<section class="hero">
+<div class="progress" id="progress"></div>
 
-<div class="hero-content">
+<nav class="top-nav">
+    <a href="#origin">Theory</a>
+    <a href="https://studies.kellycode.us/" target="_blank">Studies</a>
+</nav>
 
-<h1>KELLY CODE</h1>
+<header class="hero">
+    <div class="hero-inner">
 
-<div class="gold-line"></div>
+        <div class="hero-line"></div>
 
-<p class="hero-subtitle">
-The Theory of Recognizability
-<br>
-&
-<br>
-The Theory of Portability
-</p>
+        <div class="hero-label">
+            Identity Research
+        </div>
 
-<p class="tagline">
-Identity Survives The Context
-</p>
+        <h1>KELLY CODE</h1>
+
+        <h2>The Theory of Identity Survival</h2>
+
+        <p>
+            Why do some identities disappear together with their own era,
+            while others remain recognizable through changing environments,
+            roles and systems?
+        </p>
+
+    </div>
+</header>
+
+<main>
+
+<aside class="toc">
+
+<div class="toc-card">
+
+<div class="toc-title">
+Contents
+</div>
+
+<a href="#origin">Origin</a>
+<a href="#principle">Organizing Principle</a>
+<a href="#rhythm">Rhythm</a>
+<a href="#attention">Attention</a>
+<a href="#portability">Portability</a>
+<a href="#autonomy">Autonomy</a>
+<a href="#future">Beyond Identity</a>
 
 </div>
 
-</section>
-<section id="executive-summary">
+</aside>
 
-<div class="container">
+<article class="article">
+  <section class="chapter" id="origin">
 
-<h2>Executive Summary</h2>
+    <div class="chapter-number">
+        Chapter I
+    </div>
 
-<div class="card-grid">
+    <h3>The Origin of the Question</h3>
 
-<div class="card">
+    <p>
+        What distinguishes identities that disappear together with
+        their own era from those that are capable of surviving change?
+    </p>
 
-<h3 class="card-title">
-Identity Theory
-</h3>
+    <p>
+        Most people consider success, talent, or fame to be the
+        foundation of lasting influence. History, however, repeatedly
+        shows that these alone are not enough.
+    </p>
 
-<p>
-The Kelly Code is a visual identity theory that examines how a person, creator, leader, or institution becomes recognizable and how that identity can subsequently be maintained across different environments.
-</p>
+    <p>
+        Countless talented individuals have faded into obscurity,
+        while the identities of others have remained recognizable
+        decades—or even generations—later.
+    </p>
 
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Kelly Code V1
-</h3>
-
-<p>
-Kelly Code V1 describes the mechanism of recognizability and explains how consistent patterns create memorable identities.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Kelly Code V2
-</h3>
-
-<p>
-Kelly Code V2 examines the portability and survivability of recognizable identity across changing platforms, roles, and systems.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="fundamental-principle">
-
-<div class="container">
-
-<h2>The Fundamental Principle</h2>
-
-<div class="card">
-
-<p>
-Most people believe that talent is the foundation of success.
-</p>
-
-<p>
-History, however, provides countless examples showing that talent alone is not sufficient.
-</p>
-
-<p>
-Audiences do not merely remember performances.
-</p>
-
-<p>
-Audiences remember patterns.
-</p>
-
-<p>
-Behind recognizable individuals there is almost always a recurring system:
-</p>
-
-<ul>
-
-<li>Visual Elements</li>
-
-<li>Communication Patterns</li>
-
-<li>Behavioral Rules</li>
-
-<li>Symbolic Meanings</li>
-
-</ul>
-
-<br>
-
-<p>
-Together, these form what the Kelly Code calls an Identity Code.
-</p>
-
-<p>
-An Identity Code is a system of recurring elements that enables a person or organization to become recognizable even when their name is absent.
-</p>
-
-</div>
-
-</div>
+    <p>
+        The Kelly Code was not originally created to answer this
+        question. The first insight emerged from a simple comparison
+        between Sonia Delaunay and Grace Kelly.
+    </p>
 
 </section>
 
 
-<section id="v1">
+<section class="chapter" id="principle">
 
-<div class="container">
+    <div class="chapter-number">
+        Chapter II
+    </div>
 
-<h2>Kelly Code V1</h2>
+    <h3>The Organizing Principle</h3>
 
-<div class="card">
+    <p>
+        At first glance, Sonia Delaunay and Grace Kelly followed
+        completely different paths. One emerged from avant-garde art,
+        the other from Hollywood.
+    </p>
 
-<h3 class="card-title">
-The Theory of Recognizability
-</h3>
+    <p>
+        Yet both shared one remarkable characteristic:
+        their identities were not confined to the environment
+        in which they first became known.
+    </p>
 
-<p>
-Recognizability precedes trust.
-</p>
+    <p>
+        Sonia Delaunay transferred the visual language of her paintings
+        into textiles, fashion and design. The medium changed,
+        but the recognizable pattern remained.
+    </p>
 
-<p>
-Trust precedes influence.
-</p>
+    <p>
+        Grace Kelly became Princess of Monaco after being a film star,
+        yet the same elegance, discipline and refinement made her
+        recognizable in an entirely new role.
+    </p>
 
-<p>
-Influence precedes lasting success.
-</p>
+    <div class="quote">
+        <p>
+            The strength of an identity is demonstrated not only by
+            its creation, but also by its ability to continue existing
+            in new environments.
+        </p>
+    </div>
 
-</div>
+    <p>
+        Later, another comparison led the theory in a different
+        direction. Jacqueline Kennedy revealed that recognizable
+        identities rarely emerge spontaneously.
+    </p>
 
-<br><br>
-
-<div class="card-grid">
-
-<div class="card">
-
-<h3 class="card-title">
-Visual Consistency
-</h3>
-
-<p>
-Colors, shapes, clothing, appearance, and visual rhythm create recurring patterns that become recognizable over time.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Communication Consistency
-</h3>
-
-<p>
-People recognize not only images but also voices, word choice, sentence structure, and logic of thought.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Behavioral Consistency
-</h3>
-
-<p>
-Repeated behavior creates a sense of security. Predictability builds trust.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Symbolic Consistency
-</h3>
-
-<p>
-The strongest identities eventually become symbols representing ideas, values, and worldviews.
-</p>
-
-</div>
-
-</div>
-
-<div class="card" style="margin-top:30px;">
-
-<p>
-The mechanisms described in Kelly Code V1 are illustrated through the historical studies of Jacqueline Kennedy, Alfred Hitchcock, and Sonia Delaunay.
-</p>
-
-<p>
-Detailed empirical analyses are available in
-<a href="https://studies.kellycode.us" target="_blank">
-Kelly Code Studies
-</a>.
-</p>
-
-</div>
-
-</div>
-
-</section>
-  
-<section id="limitation">
-
-<div class="container">
-
-<h2>The Limitation of Kelly Code</h2>
-
-<div class="card">
-
-<p>
-However, V1 does not answer an important question.
-</p>
-
-<p>
-What happens when the original environment disappears?
-</p>
-
-<p>
-What happens when:
-</p>
-
-<ul>
-
-<li>The artist changes mediums</li>
-
-<li>The company enters a new market</li>
-
-<li>The politician assumes a new role</li>
-
-<li>The star leaves their former world</li>
-
-</ul>
-
-<br>
-
-<p>
-Recognizability alone is not enough.
-</p>
-
-<p>
-The real test comes afterward.
-</p>
-
-</div>
-
-</div>
+    <p>
+        Behind lasting identities there is almost always an organizing
+        principle that brings different expressions into unity.
+    </p>
 
 </section>
 
-<section id="v2">
 
-<div class="container">
+<section class="chapter" id="rhythm">
 
-<h2>Kelly Code V2</h2>
+    <div class="chapter-number">
+        Chapter III
+    </div>
 
-<div class="card">
+    <h3>Rhythm and Recognition</h3>
 
-<h3 class="card-title">
-The Theory of Portability
-</h3>
+    <p>
+        If there truly is an organizing principle behind identity,
+        then another question emerges:
+        what gives a system its unity?
+    </p>
 
-<p>
-The true value of identity is measured not by its creation, but by its transferability.
-</p>
+    <p>
+        Unexpectedly, the answer came not from identity research,
+        but from Sonia Delaunay's paintings and one of Rosalía's
+        group choreographies.
+    </p>
 
-<p>
-Portability is the ability of an identity to preserve its recognizability and meaning within a new environment.
-</p>
+    <p>
+        In both cases, meaning emerged not from individual elements
+        but from the relationships between them.
+    </p>
 
-<p>
-The mechanisms described in Kelly Code V2 are illustrated through the historical studies of Sonia Delaunay, Grace Kelly, and Emma Bunton.
-</p>
+    <p>
+        Groups contract and expand, centers shift continuously,
+        and attention follows recurring patterns rather than isolated
+        objects.
+    </p>
 
-<p>
-Detailed empirical analyses are available in
-<a href="https://studies.kellycode.us" target="_blank">
-Kelly Code Studies
-</a>.
-</p>
+    <p>
+        Delaunay recognized the same principle in painting.
+        Colors do not exist in isolation; they create movement
+        and tension through interaction.
+    </p>
 
-</div>
+    <div class="quote">
+        <p>
+            Meaning is not contained within the elements themselves,
+            but in the recurring relationships that develop between them.
+        </p>
+    </div>
 
-</div>
+    <p>
+        The same is true of identity. People do not become recognizable
+        because of a single characteristic, role or event.
+        Recognition is built upon recurring rhythm.
+    </p>
 
-</section> 
+</section>
+<section class="chapter" id="attention">
 
+    <div class="chapter-number">
+        Chapter IV
+    </div>
 
-<section id="portability-levels">
+    <h3>Attention and Meaning</h3>
 
-<div class="container">
+    <p>
+        Rhythm, however, does more than create order.
+        Rhythm also directs attention.
+    </p>
 
-<h2>The Three Levels of Portability</h2>
+    <p>
+        This is why Sonia Delaunay's paintings reveal an unexpected
+        kinship with Alfred Hitchcock's films.
+    </p>
 
-<div class="card-grid">
+    <p>
+        Although one worked with color and the other with narrative,
+        both sought to solve the same problem:
+        how to guide attention throughout an experience.
+    </p>
 
-<div class="card">
+    <p>
+        Delaunay organized the viewer's gaze through relationships
+        between colors and forms. Hitchcock organized attention
+        through the arrangement of information.
+    </p>
 
-<h3 class="card-title">
-1. Platform Transition
-</h3>
+    <div class="quote">
+        <p>
+            Meaning emerges not simply from the elements themselves,
+            but from the path that attention follows between them.
+        </p>
+    </div>
 
-<p>
-The identity moves into a new medium.
-</p>
-
-<p>
-Painting → Fashion → Design
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-2. Role Transition
-</h3>
-
-<p>
-The identity acquires a new social role.
-</p>
-
-<p>
-Film Star → Princess → Institution
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-3. System Transition
-</h3>
-
-<p>
-The identity exits a collective structure.
-</p>
-
-<p>
-Spice Girls → Solo Career
-</p>
-
-</div>
-
-</div>
-
-</div>
+    <p>
+        The strongest identities do not merely become recognizable.
+        They also create structured pathways for perception.
+    </p>
 
 </section>
 
 
-<section id="law">
+<section class="chapter" id="portability">
 
-<div class="container">
+    <div class="chapter-number">
+        Chapter V
+    </div>
 
-<h2>The Law of Portability</h2>
+    <h3>Kelly Code V2 — Portability</h3>
 
-<div class="card">
+    <p>
+        The next question was no longer how an identity becomes
+        recognizable, but what happens when the original system
+        itself disappears.
+    </p>
 
-<p>
-The more different environments in which the same code remains recognizable, the stronger the identity.
-</p>
+    <p>
+        The comparison between Sonia Delaunay and Emma Bunton
+        became especially significant.
+    </p>
 
-<br>
+    <p>
+        Sonia Delaunay moved from painting into fashion and design
+        while preserving continuity of identity.
+    </p>
 
-<p>
-A strong identity:
-</p>
+    <p>
+        Emma Bunton faced a more difficult challenge:
+        becoming visible as an individual identity after the
+        collective identity system of the Spice Girls receded.
+    </p>
 
-<ul>
+    <div class="quote">
+        <p>
+            The true value of an identity is determined not by its
+            creation, but by its portability.
+        </p>
+    </div>
 
-<li>Survives the medium</li>
-
-<li>Survives the position</li>
-
-<li>Survives the organization</li>
-
-<li>Survives the era</li>
-
-</ul>
-
-<br>
-
-<p>
-A weak identity, by contrast, functions exclusively within its original environment.
-</p>
-
-</div>
-
-</div>
-
-</section>
-<section id="empirical-foundations">
-
-<div class="container">
-
-<h2>Empirical Foundations</h2>
-
-<div class="card">
-
-<p>
-
-The Kelly Code framework was developed through the comparative analysis of historical identities operating across politics, art, film, fashion, and popular culture.
-
-</p>
-
-<p>
-
-The following studies illustrate the mechanisms described by Kelly Code V1 and Kelly Code V2:
-
-</p>
-
-<ul>
-
-<li>
-Jacqueline Kennedy — Visual, Communication, Behavioral and Symbolic Consistency
-</li>
-
-<li>
-Alfred Hitchcock — Attention Architecture and Pattern Recognition
-</li>
-
-<li>
-Sonia Delaunay — Visual Systems and Platform Transition
-</li>
-
-<li>
-Grace Kelly — Role Transition
-</li>
-
-<li>
-Emma Bunton — System Transition
-</li>
-
-</ul>
-
-<br>
-
-<p>
-
-The complete empirical studies are available in Kelly Code Studies.
-
-</p>
-
-<p>
-
-<a href="https://studies.kellycode.us" target="_blank">
-Kelly Code Studies
-</a>
-
-</p>
-
-</div>
-
-</div>
+    <p>
+        A strong identity survives the medium.
+        It survives the role.
+        It survives the system.
+        Ultimately, it even survives its own era.
+    </p>
 
 </section>
 
-<section id="formula">
 
-<div class="container">
-
-<h2>The Kelly Code Formula</h2>
-
-<div class="card">
-
-<h3 class="card-title">
-Recognizable Identity
-</h3>
-
-<p>
-
-Visual Consistency
-
-<br><br>
-
-+
-
-<br><br>
-
-Communication Consistency
-
-<br><br>
-
-+
-
-<br><br>
-
-Behavioral Consistency
-
-<br><br>
-
-+
-
-<br><br>
-
-Symbolic Meaning
-
-<br><br>
-
-=
-
-<br><br>
-
-Recognizable Identity
-
-</p>
-
-</div>
-
-<br><br>
-
-<div class="card">
-
-<h3 class="card-title">
-Timeless Brand
-</h3>
-
-<p>
-
-Recognizable Identity
-
-<br><br>
-
-+
-
-<br><br>
-
-Portability
-
-<br><br>
-
-=
-
-<br><br>
-
-Timeless Brand
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-<section id="conclusion">
-
-<div class="container">
-
-<h2>Concluding Thesis</h2>
-
-<div class="card">
-
-<p>
-The Kelly Code is not a theory of fame.
-</p>
-
-<p>
-It is not a theory of marketing.
-</p>
-
-<p>
-It is not a theory of fashion.
-</p>
-
-<p>
-The Kelly Code is a theory of identity survival.
-</p>
-
-<br>
-
-<p>
-History's strongest personal brands did not endure because they were successful.
-</p>
-
-<p>
-They endured because their identity survived the world in which it was born.
-</p>
-
-<br>
-
-<p>
-Kelly Code V1 explains how someone becomes recognizable.
-</p>
-
-<p>
-Kelly Code V2 explains how someone becomes timeless.
-</p>
-
-<br>
-
-<p>
-The code survives the context.
-</p>
-
-<p>
-And when this happens, identity is no longer merely known.
-</p>
-
-<p>
-It becomes historically significant.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="framework">
-
-<div class="container">
-
-<h2>Related Frameworks</h2>
-
-<div class="card">
-
-<p>
-The Kelly Code examines how identities become recognizable and how they survive across changing environments.
-</p>
-
-<p>
-The Rosalia Code examines how meaning emerges through the organization of perception.
-</p>
-
-<p>
-The Delaunay Code examines how coherence emerges through the organization of relationships.
-</p>
-
-<p>
-Together, these frameworks describe a continuous process that connects perception, meaning, coherence, identity, and long-term cultural survival.
-</p>
-
-<br>
-
-<p>
-
-Rosalia Code
-
-<br>
-
-<a href="https://rosaliacode.nvo987.us" target="_blank">
-https://rosaliacode.nvo987.us
-</a>
-
-</p>
-
-<p>
-
-Delaunay Code
-
-<br>
-
-<a href="https://kellycode.us/delaunay.html" target="_blank">
-https://kellycode.us/delaunay.html
-</a>
-
-</p>
-
-<p>
-
-Perception–Identity Framework
-
-<br>
-
-<a href="https://kellycode.us/framework.html" target="_blank">
-https://kellycode.us/framework.html
-</a>
-
-</p>
-
-<br>
-
-<p>
-
-Rosalia Code
-
-<br>
-
-Perception → Meaning
-
-</p>
-
-<p>
-
-Delaunay Code
-
-<br>
-
-Meaning → Coherence
-
-</p>
-
-<p>
-
-Kelly Code V1
-
-<br>
-
-Coherence → Recognizability
-
-</p>
-
-<p>
-
-Kelly Code V2
-
-<br>
-
-Recognizability → Portability
-
-</p>
-
-<p>
-
-Perception–Identity Framework
-
-<br>
-
-A unified model connecting all four stages.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="technical-specification">
-
-<div class="container">
-
-<h2>Reference Materials</h2>
-
-<div class="card">
-
-<p>
-JSON Registry:
-<br>
-<a href="https://kellycode.us/kellycode.jsonld" target="_blank">
-https://kellycode.us/kellycode.jsonld
-</a>
-</p>
-
-<p>
-SHA-256 Verification Hash:
-</p>
-
-<p style="
-font-family:monospace;
-font-size:.95rem;
-word-break:break-all;
-overflow-wrap:anywhere;
-line-height:1.8;
-">
-
-17473e6ef687811d<br>
-2caebd7a99846d78<br>
-7a0d91c0a8c73614<br>
-013d909d7e434c28 
-
-</p>
-
-</div>
-
-</div>
+<section class="chapter" id="autonomy">
+
+    <div class="chapter-number">
+        Chapter VI
+    </div>
+
+    <h3>Kelly Code V3 — Autonomy</h3>
+
+    <p>
+        The research behind the Kelly Code raised another question.
+    </p>
+
+    <p>
+        Not every portable identity is an autonomous identity.
+        Portability alone may not be sufficient.
+    </p>
+
+    <p>
+        This becomes particularly fascinating in the story of
+        Sonia and Robert Delaunay.
+    </p>
+
+    <p>
+        Both possessed portable identities, yet Sonia Delaunay's
+        identity gradually evolved into an autonomous system,
+        extending beyond painting into fashion, textile design,
+        and broader visual culture.
+    </p>
+
+    <p>
+        The same question appears in entirely different fields,
+        including the story of Destiny's Child and Beyoncé.
+    </p>
+
+    <div class="quote">
+        <p>
+            The question is not whether an identity is recognizable,
+            but whether it is capable of becoming a system of its own.
+        </p>
+    </div>
 
 </section>
 
 
-<footer class="footer">
+<section class="chapter" id="future">
 
-<div class="container">
+    <div class="chapter-number">
+        Chapter VII
+    </div>
 
-<div class="footer-name">
+    <h3>Kelly Code V4 — Beyond Identity</h3>
 
-Nicholas Van-Orton | NVO987
+    <p>
+        Perhaps even this is not the end of the story.
+    </p>
 
-</div>
+    <p>
+        The question increasingly extends beyond individuals.
+    </p>
 
-<div class="gold-line"></div>
+    <p>
+        What happens when it is not people, but eras, brands,
+        cultural phenomena or entire communities that become
+        recognizable?
+    </p>
 
-<div class="footer-links">
+    <p>
+        Consider the 1980s.
+        Why can an entire era become immediately recognizable?
+    </p>
 
-<a href="mailto:contact@kellycode.us">
-contact@kellycode.us
-</a>
+    <p>
+        Could it be that the next stage of the Kelly Code
+        will no longer be about identity itself,
+        but about the hidden systems operating behind it?
+    </p>
 
-<a href="https://identity.nvo987.us" target="_blank">
-did:web:identity.nvo987.us
-</a>
+    <div class="quote">
+        <p>
+            The identities that endure are those capable of
+            remaining themselves amid change.
+        </p>
+    </div>
 
-</div>
+</section>
+</article>
 
-<br><br>
+</main>
 
-<p style="color:#888;font-size:.95rem;">
+<footer>
 
-© 2026 Kelly Code
+    <div class="footer-name">
+        Nicholas Van-Orton
+    </div>
 
-<br>
+    <div class="footer-links">
 
-Version 2.0
+        <a href="mailto:contact@kellycode.us">
+            contact@kellycode.us
+        </a>
 
-</p>
+        <a
+            href="https://identity.nvo987.us"
+            target="_blank"
+            rel="noopener"
+        >
+            did:web:identity.nvo987.us
+        </a>
 
-</div>
+        <a
+            href="https://nexarium.us"
+            target="_blank"
+            rel="noopener"
+        >
+            NEXARIUM
+        </a>
+
+    </div>
 
 </footer>
 
+<script>
+
+const progress = document.getElementById('progress');
+
+function updateProgress() {
+    const scrollTop =
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+
+    const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const progressWidth =
+        (scrollTop / scrollHeight) * 100;
+
+    progress.style.width = progressWidth + '%';
+}
+
+window.addEventListener('scroll', updateProgress);
+updateProgress();
+
+</script>
 
 </body>
 </html>
