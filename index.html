@@ -7,7 +7,7 @@
 <title>KELLY CODE | The Theory of Identity Survival</title>
 
 <meta name="description"
-      content="The Kelly Code is the theory of identity survival.">
+      content="The Kelly Code – The Theory of Identity Survival">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,15 +17,14 @@
 <style>
 
 :root{
-    --bg:#050505;
-    --bg2:#0d0d0d;
+    --bg:#040404;
     --gold:#d4af37;
-    --gold-soft:#b8942c;
-    --text:#f4f4f4;
+    --gold-soft:#b9952e;
+    --text:#f5f5f5;
     --muted:#bdbdbd;
     --card:rgba(255,255,255,.03);
     --border:rgba(212,175,55,.18);
-    --radius:34px;
+    --radius:32px;
 }
 
 *{
@@ -40,16 +39,9 @@ html{
 
 body{
     background:
-        radial-gradient(
-            circle at top,
-            rgba(212,175,55,.08),
-            transparent 40%
-        ),
-        radial-gradient(
-            circle at bottom,
-            rgba(212,175,55,.05),
-            transparent 50%
-        ),
+        radial-gradient(circle at top,
+        rgba(212,175,55,.08),
+        transparent 40%),
         var(--bg);
 
     color:var(--text);
@@ -58,8 +50,8 @@ body{
 }
 
 a{
-    text-decoration:none;
     color:inherit;
+    text-decoration:none;
 }
 
 .progress{
@@ -68,148 +60,71 @@ a{
     left:0;
     width:0;
     height:2px;
-    background:linear-gradient(
-        90deg,
-        #8b6b1b,
-        #d4af37,
-        #f0de8a
-    );
+    background:var(--gold);
     z-index:9999;
 }
 
-.top-nav{
+nav{
     position:fixed;
-    top:28px;
+    top:30px;
     left:50%;
     transform:translateX(-50%);
     z-index:999;
-    display:flex;
-    gap:16px;
-    flex-wrap:wrap;
-    justify-content:center;
 }
 
-.top-nav a{
+nav a{
+    display:inline-block;
     padding:12px 24px;
     border-radius:40px;
-    border:1px solid rgba(212,175,55,.18);
+    border:1px solid var(--border);
     background:rgba(255,255,255,.03);
-    backdrop-filter:blur(16px);
+    backdrop-filter:blur(20px);
     font-family:'Inter',sans-serif;
-    font-size:.82rem;
+    font-size:.8rem;
     letter-spacing:2px;
     text-transform:uppercase;
-    transition:.35s;
 }
 
-.top-nav a:hover{
-    border-color:var(--gold);
-    background:rgba(212,175,55,.1);
-}
-
-.hero{
+header{
     min-height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    padding:120px 30px 80px;
+    padding:140px 30px 80px;
 }
 
-.hero-inner{
+.hero{
     width:min(900px,100%);
-}
-
-.hero-line{
-    width:160px;
-    height:1px;
-    background:var(--gold);
-    margin:0 auto 40px;
-}
-
-.hero-label{
-    font-family:'Inter',sans-serif;
-    color:var(--gold-soft);
-    letter-spacing:4px;
-    text-transform:uppercase;
-    font-size:.85rem;
-    margin-bottom:28px;
 }
 
 .hero h1{
     font-family:'Cinzel',serif;
     color:var(--gold);
-    font-size:clamp(3rem,9vw,7rem);
+    font-size:clamp(3rem,8vw,7rem);
     letter-spacing:10px;
-    line-height:1;
-    margin-bottom:24px;
+    margin-bottom:20px;
 }
 
 .hero h2{
-    font-weight:300;
-    font-size:clamp(1.6rem,4vw,2.7rem);
+    font-weight:400;
+    font-size:clamp(1.5rem,4vw,2.6rem);
     margin-bottom:35px;
 }
 
 .hero p{
-    max-width:760px;
-    margin:auto;
     color:var(--muted);
     font-size:1.3rem;
     line-height:1.8;
 }
 
 main{
-    width:min(1400px,92%);
+    width:min(1100px,92%);
     margin:auto;
-    display:grid;
-    grid-template-columns:280px 1fr;
-    gap:60px;
     padding-bottom:120px;
 }
 
-.toc{
-    position:sticky;
-    top:120px;
-    height:max-content;
-}
-
-.toc-card{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:28px;
-    padding:32px;
-    backdrop-filter:blur(18px);
-}
-
-.toc-title{
-    color:var(--gold);
-    font-family:'Cinzel',serif;
-    margin-bottom:20px;
-    letter-spacing:2px;
-}
-
-.toc a{
-    display:block;
-    padding:10px 0;
-    color:#d7d7d7;
-    font-family:'Inter',sans-serif;
-    font-size:.92rem;
-    transition:.3s;
-}
-
-.toc a:hover{
-    color:var(--gold);
-    transform:translateX(8px);
-}
-
-.article{
-    display:flex;
-    flex-direction:column;
-    gap:40px;
-}
-
-.chapter{
+.card{
     background:
         linear-gradient(
             180deg,
@@ -217,104 +132,36 @@ main{
             rgba(255,255,255,.02)
         );
 
-    border:1px solid rgba(212,175,55,.15);
-    border-radius:36px;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
     padding:70px;
+    margin-bottom:45px;
     backdrop-filter:blur(20px);
 }
 
-.chapter-number{
-    color:rgba(212,175,55,.55);
-    font-family:'Inter',sans-serif;
-    letter-spacing:4px;
-    text-transform:uppercase;
-    font-size:.8rem;
-    margin-bottom:20px;
-}
-
-.chapter h3{
-    color:var(--gold);
-    font-family:'Cinzel',serif;
-    font-size:2rem;
-    margin-bottom:30px;
-}
-
-.chapter p{
-    font-size:1.35rem;
+.card p{
+    font-size:1.38rem;
     line-height:2;
     margin-bottom:28px;
 }
 
-.quote{
-    border-left:3px solid var(--gold);
-    padding:30px;
-    margin:40px 0;
-    background:rgba(212,175,55,.04);
+.card p:last-child{
+    margin-bottom:0;
 }
 
-.quote p{
-    color:var(--gold);
-    font-size:1.8rem;
-    margin:0;
-}
+@media(max-width:768px){
 
-footer{
-    border-top:1px solid rgba(212,175,55,.15);
-    padding:80px 30px;
-    text-align:center;
-}
-
-.footer-name{
-    color:var(--gold);
-    font-family:'Cinzel',serif;
-    margin-bottom:30px;
-    font-size:1.2rem;
-}
-
-.footer-links{
-    display:flex;
-    gap:30px;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
-.footer-links a{
-    color:#d8d8d8;
-}
-
-.footer-links a:hover{
-    color:var(--gold);
-}
-
-@media (max-width:1100px){
-
-    main{
-        grid-template-columns:1fr;
+    .card{
+        padding:38px 26px;
     }
 
-    .toc{
-        position:relative;
-        top:auto;
-    }
-}
-
-@media (max-width:768px){
-
-    .chapter{
-        padding:36px 26px;
-    }
-
-    .chapter p{
-        font-size:1.12rem;
+    .card p{
+        font-size:1.15rem;
         line-height:1.8;
     }
 
-    .quote p{
-        font-size:1.4rem;
-    }
-
-    .top-nav{
-        width:95%;
+    .hero p{
+        font-size:1.1rem;
     }
 }
 
@@ -325,19 +172,15 @@ footer{
 
 <div class="progress" id="progress"></div>
 
-<nav class="top-nav">
-    <a href="#origin">Theory</a>
-    <a href="https://studies.kellycode.us/" target="_blank">Studies</a>
+<nav>
+    <a href="https://studies.kellycode.us/" target="_blank">
+        Studies
+    </a>
 </nav>
 
-<header class="hero">
-    <div class="hero-inner">
+<header>
 
-        <div class="hero-line"></div>
-
-        <div class="hero-label">
-            Identity Research
-        </div>
+    <div class="hero">
 
         <h1>KELLY CODE</h1>
 
@@ -350,348 +193,409 @@ footer{
         </p>
 
     </div>
+
 </header>
 
 <main>
 
-<aside class="toc">
+<section class="card">
 
-<div class="toc-card">
+<p><strong>KELLY CODE</strong></p>
 
-<div class="toc-title">
-Contents
-</div>
+<p><strong>The Theory of Identity Survival</strong></p>
 
-<a href="#origin">Origin</a>
-<a href="#principle">Organizing Principle</a>
-<a href="#rhythm">Rhythm</a>
-<a href="#attention">Attention</a>
-<a href="#portability">Portability</a>
-<a href="#autonomy">Autonomy</a>
-<a href="#future">Beyond Identity</a>
+<p>
+What distinguishes identities that disappear together with their own era from those that are capable of surviving change?
+</p>
 
-</div>
+<p>
+Most people consider success, talent, or fame to be the foundation of lasting influence. History, however, repeatedly shows that these alone are not enough. Countless talented individuals have faded into obscurity, while the identities of others have remained recognizable decades—or even generations—later.
+</p>
 
-</aside>
+<p>
+The Kelly Code was not originally created to answer this question. The first insight emerged from a simple comparison. At first glance, Sonia Delaunay and Grace Kelly followed completely different life paths. One came from the world of avant-garde art, the other from Hollywood. Yet they shared one remarkable characteristic: their identities were not confined to the environment in which they first became known.
+</p>
 
-<article class="article">
-  <section class="chapter" id="origin">
+<p>
+Sonia Delaunay was able to transfer the visual system she developed in painting into textiles, fashion, and design. The medium changed, but the recognizable pattern remained. In Grace Kelly's case, it was not the medium but the role that changed. She became Princess of Monaco after being a film star, yet the same elegance, discipline, and refinement made her recognizable in her new environment.
+</p>
 
-    <div class="chapter-number">
-        Chapter I
-    </div>
-
-    <h3>The Origin of the Question</h3>
-
-    <p>
-        What distinguishes identities that disappear together with
-        their own era from those that are capable of surviving change?
-    </p>
-
-    <p>
-        Most people consider success, talent, or fame to be the
-        foundation of lasting influence. History, however, repeatedly
-        shows that these alone are not enough.
-    </p>
-
-    <p>
-        Countless talented individuals have faded into obscurity,
-        while the identities of others have remained recognizable
-        decades—or even generations—later.
-    </p>
-
-    <p>
-        The Kelly Code was not originally created to answer this
-        question. The first insight emerged from a simple comparison
-        between Sonia Delaunay and Grace Kelly.
-    </p>
+<p>
+From this emerged the first fundamental principle of the Kelly Code: the strength of an identity is demonstrated not only by its creation, but also by its ability to continue existing in new environments.
+</p>
 
 </section>
+<section class="card">
 
+<p>
+Later, another comparison led the thinking in a different direction. At first glance, Jacqueline Kennedy and Sonia Delaunay appear to have little in common. Yet both of their work illuminated the same question: how can a consistent public image be created?
+</p>
 
-<section class="chapter" id="principle">
+<p>
+Jacqueline Kennedy applied a similar logic in an entirely different field. She did not simply communicate with the public; she consciously shaped its perception. The restoration of the White House, the disciplined use of media, the consistency of her appearance, and the rhythm of her public engagements were all parts of the same cultural composition. She was not merely present in the media; she organized the image that the public formed of her.
+</p>
 
-    <div class="chapter-number">
-        Chapter II
-    </div>
+<p>
+From this comparison came one of the key insights of Kelly Code V1: strong identities do not emerge spontaneously. Behind recognizable individuals there is almost always an organizing principle that brings their different expressions into unity. Identity is not found in a single image, role, or message, but in recurring consistency.
+</p>
 
-    <h3>The Organizing Principle</h3>
+<p>
+Ultimately, people do not recognize individuals—they recognize systems. They do not remember a single impression, but the underlying pattern.
+</p>
 
-    <p>
-        At first glance, Sonia Delaunay and Grace Kelly followed
-        completely different paths. One emerged from avant-garde art,
-        the other from Hollywood.
-    </p>
+<p>
+If there truly is an organizing principle behind identity, then another question arises: what gives a system its unity? What connects separate elements into a recognizable pattern?
+</p>
 
-    <p>
-        Yet both shared one remarkable characteristic:
-        their identities were not confined to the environment
-        in which they first became known.
-    </p>
+<p>
+Unexpectedly, the answer came not from identity research, but from Sonia Delaunay's paintings and one of Rosalía's group choreographies.
+</p>
 
-    <p>
-        Sonia Delaunay transferred the visual language of her paintings
-        into textiles, fashion and design. The medium changed,
-        but the recognizable pattern remained.
-    </p>
+<p>
+At first glance, these two worlds appear completely different. One is built from colors and forms, the other from moving bodies. Yet the same fundamental principle operates in both.
+</p>
 
-    <p>
-        Grace Kelly became Princess of Monaco after being a film star,
-        yet the same elegance, discipline and refinement made her
-        recognizable in an entirely new role.
-    </p>
+<p>
+Attention does not remain fixed on a single point. Groups contract and expand, centers continuously shift, and meaning emerges not from the individual elements but from the relationships between them. The viewer no longer watches people but patterns.
+</p>
 
-    <div class="quote">
-        <p>
-            The strength of an identity is demonstrated not only by
-            its creation, but also by its ability to continue existing
-            in new environments.
-        </p>
-    </div>
+<p>
+Delaunay recognized the same principle in painting. Colors do not exist in isolation; they interact, creating movement and tension. The unity of the composition is generated not by a central element, but by the rhythm of relationships.
+</p>
 
-    <p>
-        Later, another comparison led the theory in a different
-        direction. Jacqueline Kennedy revealed that recognizable
-        identities rarely emerge spontaneously.
-    </p>
-
-    <p>
-        Behind lasting identities there is almost always an organizing
-        principle that brings different expressions into unity.
-    </p>
+<p>
+For the Kelly Code, this became a crucial insight: meaning is not contained within the elements themselves, but in the recurring relationships that develop between them.
+</p>
 
 </section>
+<section class="card">
 
+<p>
+The same is true of identity. People do not become recognizable because of a single characteristic, role, or event. Recognition is built upon recurring rhythm: the organizing principle that repeatedly generates the same pattern across different situations.
+</p>
 
-<section class="chapter" id="rhythm">
+<p>
+Rhythm, however, does more than create order. Rhythm also directs attention.
+</p>
 
-    <div class="chapter-number">
-        Chapter III
-    </div>
+<p>
+This is why Sonia Delaunay's paintings reveal an unexpected kinship with Alfred Hitchcock's films. Although one worked with color and the other with narrative, both sought to solve the same problem: how to guide attention throughout an experience.
+</p>
 
-    <h3>Rhythm and Recognition</h3>
+<p>
+Delaunay organized the viewer's gaze through the relationships between colors and forms. Hitchcock organized the audience's attention through the arrangement of information. They worked in different media, yet both recognized the same principle: meaning emerges not simply from the elements themselves, but from the path that attention follows between them.
+</p>
 
-    <p>
-        If there truly is an organizing principle behind identity,
-        then another question emerges:
-        what gives a system its unity?
-    </p>
+<p>
+Hitchcock made this logic visible through suspense. Suspense is not merely tension. Its essence is that attention is directed toward a specific trajectory. The audience knows something the characters do not, or senses the possibility of an event that has not yet occurred. Meaning therefore emerges not in a single moment, but throughout the process of anticipation.
+</p>
 
-    <p>
-        Unexpectedly, the answer came not from identity research,
-        but from Sonia Delaunay's paintings and one of Rosalía's
-        group choreographies.
-    </p>
+<p>
+The power of suspense comes from the fact that attention is not static. It continuously moves forward, searching for relationships, evaluating possibilities, and trying to recognize patterns. The viewer becomes not merely an observer, but an active participant in the system.
+</p>
 
-    <p>
-        In both cases, meaning emerged not from individual elements
-        but from the relationships between them.
-    </p>
+<p>
+The same logic can be found in Delaunay's work. The eye never settles on a single point. Relationships between colors keep it moving, leading it toward new connections before returning it to earlier elements. The meaning of the image is not located in any single form, but in the pathway of attention.
+</p>
 
-    <p>
-        Groups contract and expand, centers shift continuously,
-        and attention follows recurring patterns rather than isolated
-        objects.
-    </p>
+<p>
+For the Kelly Code, this provided another confirmation. Identity is not simply a collection of characteristics, but a pattern that repeatedly directs attention toward the same relationships and meanings.
+</p>
 
-    <p>
-        Delaunay recognized the same principle in painting.
-        Colors do not exist in isolation; they create movement
-        and tension through interaction.
-    </p>
+<p>
+Strong identities are therefore not merely recognizable—they also guide attention. Just as a well-composed painting or a Hitchcock scene creates a structured experience, the strongest identities create consistent pathways for perception. Behind their different expressions, the same rhythm, the same organizing principle, and the same pattern return again and again.
+</p>
 
-    <div class="quote">
-        <p>
-            Meaning is not contained within the elements themselves,
-            but in the recurring relationships that develop between them.
-        </p>
-    </div>
-
-    <p>
-        The same is true of identity. People do not become recognizable
-        because of a single characteristic, role or event.
-        Recognition is built upon recurring rhythm.
-    </p>
+<p>
+But the story did not end there.
+</p>
 
 </section>
-<section class="chapter" id="attention">
+<section class="card">
 
-    <div class="chapter-number">
-        Chapter IV
-    </div>
+<p>
+The next question was no longer how an identity becomes recognizable, nor how it remains recognizable in a new environment. The real question became: what happens when the original system itself disappears?
+</p>
 
-    <h3>Attention and Meaning</h3>
+<p>
+This is where the comparison between Sonia Delaunay and Emma Bunton becomes especially interesting.
+</p>
 
-    <p>
-        Rhythm, however, does more than create order.
-        Rhythm also directs attention.
-    </p>
+<p>
+At first glance, it is once again difficult to find common ground between them. Sonia Delaunay operated within a system of art and design, while Emma Bunton became world-famous as a member of the Spice Girls.
+</p>
 
-    <p>
-        This is why Sonia Delaunay's paintings reveal an unexpected
-        kinship with Alfred Hitchcock's films.
-    </p>
+<p>
+From the perspective of Kelly Code V2, however, both of their stories illuminate the same question: can an identity survive the environment that originally made it visible?
+</p>
 
-    <p>
-        Although one worked with color and the other with narrative,
-        both sought to solve the same problem:
-        how to guide attention throughout an experience.
-    </p>
+<p>
+In Sonia Delaunay's case, the identity moved from one platform to another—from painting to fashion and then into design. Throughout this transition, the environment changed, yet the continuity of the identity remained intact.
+</p>
 
-    <p>
-        Delaunay organized the viewer's gaze through relationships
-        between colors and forms. Hitchcock organized attention
-        through the arrangement of information.
-    </p>
+<p>
+Emma Bunton's situation, however, was far more complex. The Spice Girls were not simply a successful pop group but a collective identity system. The public did not merely see the individual members—it perceived the entire structure. When such a system recedes, the question arises: how much of the individual remains without the system?
+</p>
 
-    <div class="quote">
-        <p>
-            Meaning emerges not simply from the elements themselves,
-            but from the path that attention follows between them.
-        </p>
-    </div>
+<p>
+This is the most demanding test of portability.
+</p>
 
-    <p>
-        The strongest identities do not merely become recognizable.
-        They also create structured pathways for perception.
-    </p>
+<p>
+During a platform transition, identity enters a new medium. During a role transition, identity enters a new social position. During a system transition, however, identity must first emerge from the very structure that previously defined it.
+</p>
 
-</section>
+<p>
+Emma Bunton's story is therefore particularly significant. Her challenge was not simply adaptation, but becoming visible as an individual identity behind a collective one. The question was not whether her career could continue. The question was what remained recognizable once the original system no longer provided the framework for recognition.
+</p>
 
+<p>
+For the Kelly Code, this led to the final formulation of portability.
+</p>
 
-<section class="chapter" id="portability">
+<p>
+Recognition alone is not enough. An identity may be highly recognizable within a specific environment while disappearing completely the moment that environment ceases to exist. The true test does not occur at the moment of creation, but at the moment of change.
+</p>
 
-    <div class="chapter-number">
-        Chapter V
-    </div>
+<p>
+"This is why Kelly Code V2 formulates the following principle:"
+</p>
 
-    <h3>Kelly Code V2 — Portability</h3>
+<p>
+<strong>
+"The true value of an identity is determined not by its creation, but by its portability."
+</strong>
+</p>
 
-    <p>
-        The next question was no longer how an identity becomes
-        recognizable, but what happens when the original system
-        itself disappears.
-    </p>
+<p>
+The more different environments in which the same identity remains recognizable, the stronger that identity is. A strong identity survives the medium. It survives the role. It survives the system. Ultimately, it even survives its own era.
+</p>
 
-    <p>
-        The comparison between Sonia Delaunay and Emma Bunton
-        became especially significant.
-    </p>
+<p>
+If we examine the development of the Kelly Code as a single intellectual trajectory, Grace Kelly and Sonia Delaunay first demonstrate that identity can survive its original environment. Jacqueline Kennedy demonstrates that recognizable identities are usually built upon an organizing principle. Rosalía's choreography and Sonia Delaunay's paintings reveal that this organizing principle is held together by the rhythm of recurring relationships. Alfred Hitchcock demonstrates that this rhythm not only creates order but also directs attention. Emma Bunton demonstrates how identity can remain recognizable even after the system that originally made it famous no longer exists.
+</p>
 
-    <p>
-        Sonia Delaunay moved from painting into fashion and design
-        while preserving continuity of identity.
-    </p>
+<p>
+The Kelly Code is therefore not a theory of fame. It is not a theory of marketing. Nor is it a theory of fashion or personal branding.
+</p>
 
-    <p>
-        Emma Bunton faced a more difficult challenge:
-        becoming visible as an individual identity after the
-        collective identity system of the Spice Girls receded.
-    </p>
+<p>
+The Kelly Code is the theory of identity survival.
+</p>
 
-    <div class="quote">
-        <p>
-            The true value of an identity is determined not by its
-            creation, but by its portability.
-        </p>
-    </div>
+<p>
+History's strongest identities did not endure because they were successful. They did not endure because they dominated their own era. They endured because their identities survived the environment, the role, and ultimately the system in which they were created.
+</p>
 
-    <p>
-        A strong identity survives the medium.
-        It survives the role.
-        It survives the system.
-        Ultimately, it even survives its own era.
-    </p>
+<p>
+Ultimately, identity is not preserved by time. The identities that endure are those capable of remaining themselves amid change.
+</p>
 
 </section>
+<section class="card">
 
+<p>
+The next question was no longer how an identity becomes recognizable, nor how it remains recognizable in a new environment. The real question became: what happens when the original system itself disappears?
+</p>
 
-<section class="chapter" id="autonomy">
+<p>
+This is where the comparison between Sonia Delaunay and Emma Bunton becomes especially interesting.
+</p>
 
-    <div class="chapter-number">
-        Chapter VI
-    </div>
+<p>
+At first glance, it is once again difficult to find common ground between them. Sonia Delaunay operated within a system of art and design, while Emma Bunton became world-famous as a member of the Spice Girls.
+</p>
 
-    <h3>Kelly Code V3 — Autonomy</h3>
+<p>
+From the perspective of Kelly Code V2, however, both of their stories illuminate the same question: can an identity survive the environment that originally made it visible?
+</p>
 
-    <p>
-        The research behind the Kelly Code raised another question.
-    </p>
+<p>
+In Sonia Delaunay's case, the identity moved from one platform to another—from painting to fashion and then into design. Throughout this transition, the environment changed, yet the continuity of the identity remained intact.
+</p>
 
-    <p>
-        Not every portable identity is an autonomous identity.
-        Portability alone may not be sufficient.
-    </p>
+<p>
+Emma Bunton's situation, however, was far more complex. The Spice Girls were not simply a successful pop group but a collective identity system. The public did not merely see the individual members—it perceived the entire structure. When such a system recedes, the question arises: how much of the individual remains without the system?
+</p>
 
-    <p>
-        This becomes particularly fascinating in the story of
-        Sonia and Robert Delaunay.
-    </p>
+<p>
+This is the most demanding test of portability.
+</p>
 
-    <p>
-        Both possessed portable identities, yet Sonia Delaunay's
-        identity gradually evolved into an autonomous system,
-        extending beyond painting into fashion, textile design,
-        and broader visual culture.
-    </p>
+<p>
+During a platform transition, identity enters a new medium. During a role transition, identity enters a new social position. During a system transition, however, identity must first emerge from the very structure that previously defined it.
+</p>
 
-    <p>
-        The same question appears in entirely different fields,
-        including the story of Destiny's Child and Beyoncé.
-    </p>
+<p>
+Emma Bunton's story is therefore particularly significant. Her challenge was not simply adaptation, but becoming visible as an individual identity behind a collective one. The question was not whether her career could continue. The question was what remained recognizable once the original system no longer provided the framework for recognition.
+</p>
 
-    <div class="quote">
-        <p>
-            The question is not whether an identity is recognizable,
-            but whether it is capable of becoming a system of its own.
-        </p>
-    </div>
+<p>
+For the Kelly Code, this led to the final formulation of portability.
+</p>
 
-</section>
+<p>
+Recognition alone is not enough. An identity may be highly recognizable within a specific environment while disappearing completely the moment that environment ceases to exist. The true test does not occur at the moment of creation, but at the moment of change.
+</p>
 
+<p>
+"This is why Kelly Code V2 formulates the following principle:"
+</p>
 
-<section class="chapter" id="future">
+<p>
+<strong>
+"The true value of an identity is determined not by its creation, but by its portability."
+</strong>
+</p>
 
-    <div class="chapter-number">
-        Chapter VII
-    </div>
+<p>
+The more different environments in which the same identity remains recognizable, the stronger that identity is. A strong identity survives the medium. It survives the role. It survives the system. Ultimately, it even survives its own era.
+</p>
 
-    <h3>Kelly Code V4 — Beyond Identity</h3>
+<p>
+If we examine the development of the Kelly Code as a single intellectual trajectory, Grace Kelly and Sonia Delaunay first demonstrate that identity can survive its original environment. Jacqueline Kennedy demonstrates that recognizable identities are usually built upon an organizing principle. Rosalía's choreography and Sonia Delaunay's paintings reveal that this organizing principle is held together by the rhythm of recurring relationships. Alfred Hitchcock demonstrates that this rhythm not only creates order but also directs attention. Emma Bunton demonstrates how identity can remain recognizable even after the system that originally made it famous no longer exists.
+</p>
 
-    <p>
-        Perhaps even this is not the end of the story.
-    </p>
+<p>
+The Kelly Code is therefore not a theory of fame. It is not a theory of marketing. Nor is it a theory of fashion or personal branding.
+</p>
 
-    <p>
-        The question increasingly extends beyond individuals.
-    </p>
+<p>
+The Kelly Code is the theory of identity survival.
+</p>
 
-    <p>
-        What happens when it is not people, but eras, brands,
-        cultural phenomena or entire communities that become
-        recognizable?
-    </p>
+<p>
+History's strongest identities did not endure because they were successful. They did not endure because they dominated their own era. They endured because their identities survived the environment, the role, and ultimately the system in which they were created.
+</p>
 
-    <p>
-        Consider the 1980s.
-        Why can an entire era become immediately recognizable?
-    </p>
-
-    <p>
-        Could it be that the next stage of the Kelly Code
-        will no longer be about identity itself,
-        but about the hidden systems operating behind it?
-    </p>
-
-    <div class="quote">
-        <p>
-            The identities that endure are those capable of
-            remaining themselves amid change.
-        </p>
-    </div>
+<p>
+Ultimately, identity is not preserved by time. The identities that endure are those capable of remaining themselves amid change.
+</p>
 
 </section>
-</article>
+<section class="card">
+
+<p>
+The research behind the Kelly Code, however, raised another question.
+</p>
+
+<p>
+The stories of Grace Kelly, Sonia Delaunay, and Emma Bunton suggest that an identity can survive changes in environment, role, or even an entire system.
+</p>
+
+<p>
+But does this happen in every case?
+</p>
+
+<p>
+History offers at least as many counterexamples. There have been people who were part of highly recognizable identity systems, yet failed to become equally powerful independent identities once the original system disappeared.
+</p>
+
+<p>
+This points to a new problem.
+</p>
+
+<p>
+Not every portable identity is an autonomous identity.
+</p>
+
+<p>
+Portability alone may not be sufficient.
+</p>
+
+<p>
+The next question of Kelly Code V3 will therefore no longer be how an identity survives a system.
+</p>
+
+<p>
+Instead, it will ask when an identity truly becomes autonomous.
+</p>
+
+<p>
+This is where the story of Sonia and Robert Delaunay becomes particularly fascinating.
+</p>
+
+<p>
+At first glance, it would be difficult to find a more closely connected creative partnership. Both were defining figures within the same artistic environment, their thinking mutually influenced one another, and the history of Orphism is almost unimaginable without them.
+</p>
+
+<p>
+Yet an interesting difference can be observed.
+</p>
+
+<p>
+Both possessed portable identities. Both extended beyond any single artwork or project. In cultural memory, however, Sonia Delaunay's identity gradually evolved into an autonomous system. She successfully moved from painting into fashion, textile design, design itself, and other areas of visual culture without losing her recognizability.
+</p>
+
+<p>
+Robert Delaunay's significance remained unquestionable, yet his identity stayed much more closely tied to the artistic system within which it had emerged.
+</p>
+
+<p>
+From the perspective of Kelly Code V3, this raises a new question.
+</p>
+
+<p>
+What distinguishes a portable identity from an autonomous identity?
+</p>
+
+<p>
+What enables a recognizable role or position to become an independent system?
+</p>
+
+<p>
+And why do some identities remain permanently linked to the structure that originally made them visible?
+</p>
+
+<p>
+The same question appears in entirely different fields as well. The story of Destiny's Child and Beyoncé's career may be among the best-known modern examples.
+</p>
+
+<p>
+The question, however, is not the degree of success.
+</p>
+
+<p>
+It is autonomy.
+</p>
+
+<p>
+Not whether an identity is recognizable.
+</p>
+
+<p>
+But whether it is capable of becoming a system of its own.
+</p>
+
+<p>
+Perhaps, however, even this is not the end of the story.
+</p>
+
+<p>
+So far, the Kelly Code has examined people: Sonia Delaunay, Grace Kelly, Jacqueline Kennedy, Emma Bunton, and others.
+</p>
+
+<p>
+But the question increasingly extends beyond individuals.
+</p>
+
+<p>
+What happens when it is not people, but eras, brands, cultural phenomena, or entire communities that become recognizable?
+</p>
+
+<p>
+Consider the 1980s. Why can an entire era become immediately recognizable?
+</p>
+
+<p>
+Could it be that the next stage of Kelly Code V4 will no longer be about identity itself, but about the hidden systems operating behind it?
+</p>
+
+<p>
+But that is another story.
+</p>
+
+</section>
 
 </main>
 
@@ -729,25 +633,24 @@ Contents
 
 <script>
 
-const progress = document.getElementById('progress');
+const progress =
+    document.getElementById('progress');
 
-function updateProgress() {
-    const scrollTop =
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
+window.addEventListener('scroll', () => {
 
-    const scrollHeight =
+    const scrolled =
+        document.documentElement.scrollTop;
+
+    const height =
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
 
-    const progressWidth =
-        (scrollTop / scrollHeight) * 100;
+    const percent =
+        (scrolled / height) * 100;
 
-    progress.style.width = progressWidth + '%';
-}
-
-window.addEventListener('scroll', updateProgress);
-updateProgress();
+    progress.style.width =
+        percent + '%';
+});
 
 </script>
 
