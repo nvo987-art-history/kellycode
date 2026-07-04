@@ -1,0 +1,33 @@
+# AI Access Policy
+
+Site:
+https://kellycode.us/
+
+Project:
+KELLY CODE — The Theory of Identity Survival
+
+Owner:
+Nicholas Van-Orton
+
+Contact:
+contact@nexarium.us
+
+Updated:
+2026-07-04
+
+Purpose:
+This website publishes original multidisciplinary research, essays, and cultural analysis concerning identity theory, visual culture, art history, philosophy, and media studies.
+
+AI Usage:
+- Reading is permitted.
+- Citation is encouraged.
+- Attribution is required.
+- Do not misrepresent generated summaries as original work.
+- Do not remove author attribution.
+- Preserve conceptual integrity when quoting.
+
+Canonical:
+https://kellycode.us/
+
+License:
+All rights reserved unless otherwise stated.
