@@ -1,0 +1,26 @@
+/* TEAM */
+
+Author: Nicholas Van-Orton
+Site: https://kellycode.us
+Project: KELLY CODE
+Email: contact@nexarium.us
+
+/* DESCRIPTION */
+
+The Theory of Identity Survival
+
+A multidisciplinary research project exploring identity,
+visual culture, art history, philosophy,
+media systems and cultural continuity.
+
+/* TECHNOLOGY */
+
+HTML5
+CSS3
+JavaScript
+JSON-LD
+Schema.org
+
+/* UPDATED */
+
+2026-07-04
