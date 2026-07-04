@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<title>KELLY CODE</title>
+
+<subtitle>The Theory of Identity Survival</subtitle>
+
+<link href="https://kellycode.us/atom.xml" rel="self"/>
+
+<link href="https://kellycode.us/"/>
+
+<id>https://kellycode.us/</id>
+
+<updated>2026-07-04T00:00:00Z</updated>
+
+<author>
+    <name>Nicholas Van-Orton</name>
+    <email>contact@nexarium.us</email>
+</author>
+
+<entry>
+
+<title>KELLY CODE | The Theory of Identity Survival</title>
+
+<link href="https://kellycode.us/"/>
+
+<id>https://kellycode.us/</id>
+
+<updated>2026-07-04T00:00:00Z</updated>
+
+<summary>
+The Kelly Code explores how identities survive changing environments, roles, media, systems, and historical contexts.
+</summary>
+
+</entry>
+
+</feed>
