@@ -1,0 +1,36 @@
+{
+  "$schema": "https://kellycode.us/schemas/trust.json",
+  "version": "1.0",
+  "generated": "2026-07-05",
+
+  "project": {
+    "name": "KELLY CODE",
+    "title": "The Theory of Identity Survival",
+    "website": "https://kellycode.us",
+    "organization": "NVO987",
+    "ecosystem": "NEXARIUM"
+  },
+
+  "identity": {
+    "did": "did:web:identity.nvo987.us",
+    "resolver": "https://identity.nvo987.us/.well-known/did.json",
+    "authority": "https://identity.nvo987.us"
+  },
+
+  "relationships": [
+    {
+      "type": "research-network",
+      "url": "https://nvo987.us"
+    },
+    {
+      "type": "infrastructure",
+      "url": "https://nexarium.us"
+    }
+  ],
+
+  "contact": {
+    "email": "contact@kellycode.us"
+  },
+
+  "status": "active"
+}
