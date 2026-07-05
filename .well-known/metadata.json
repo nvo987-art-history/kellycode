@@ -1,0 +1,40 @@
+{
+  "$schema": "https://kellycode.us/schema/metadata.json",
+  "version": "1.0",
+  "generated": "2026-07-05",
+
+  "project": {
+    "name": "KELLY CODE",
+    "title": "The Theory of Identity Survival",
+    "website": "https://kellycode.us",
+    "language": "en",
+    "status": "active"
+  },
+
+  "creator": {
+    "name": "Nicholas Van-Orton",
+    "organization": "NVO987"
+  },
+
+  "identity": {
+    "did": "did:web:identity.nvo987.us",
+    "resolver": "https://identity.nvo987.us/.well-known/did.json"
+  },
+
+  "ecosystem": {
+    "research": "https://nvo987.us",
+    "infrastructure": "https://nexarium.us",
+    "identity": "https://identity.nvo987.us"
+  },
+
+  "resources": {
+    "homepage": "https://kellycode.us",
+    "rss": "https://kellycode.us/rss.xml",
+    "atom": "https://kellycode.us/atom.xml",
+    "sitemap": "https://kellycode.us/sitemap.xml",
+    "robots": "https://kellycode.us/robots.txt",
+    "security": "https://kellycode.us/.well-known/security.txt",
+    "llms": "https://kellycode.us/llms.txt",
+    "ai": "https://kellycode.us/ai.txt"
+  }
+}
