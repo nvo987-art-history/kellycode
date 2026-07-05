@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kellycode.us/.well-known/schema.json",
+
+  "title": "KELLY CODE Project Metadata",
+  "description": "Machine-readable metadata schema for the KELLY CODE research project within the NVO987 and NEXARIUM ecosystem.",
+
+  "type": "object",
+
+  "required": [
+    "project",
+    "creator",
+    "identity",
+    "ecosystem"
+  ],
+
+  "properties": {
+
+    "project": {
+      "type": "object",
+      "required": [
+        "name",
+        "website"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string",
+          "format": "uri"
+        },
+        "language": {
+          "type": "string"
+        }
+      }
+    },
+
+    "creator": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+
+    "identity": {
+      "type": "object",
+      "properties": {
+        "did": {
+          "type": "string"
+        },
+        "resolver": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+
+    "ecosystem": {
+      "type": "object",
+      "properties": {
+        "organization": {
+          "type": "string"
+        },
+        "research": {
+          "type": "string",
+          "format": "uri"
+        },
+        "infrastructure": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+
+  }
+}
