@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+    <foaf:Person rdf:about="https://identity.nvo987.us">
+
+        <foaf:name>Nicholas Van-Orton</foaf:name>
+
+        <foaf:homepage rdf:resource="https://kellycode.us/"/>
+
+        <foaf:mbox rdf:resource="mailto:contact@kellycode.us"/>
+
+        <foaf:member>
+
+            <foaf:Organization>
+
+                <foaf:name>NVO987</foaf:name>
+
+                <foaf:homepage rdf:resource="https://nvo987.us/"/>
+
+            </foaf:Organization>
+
+        </foaf:member>
+
+        <foaf:based_near>
+
+            <foaf:Organization>
+
+                <foaf:name>NEXARIUM</foaf:name>
+
+                <foaf:homepage rdf:resource="https://nexarium.us/"/>
+
+            </foaf:Organization>
+
+        </foaf:based_near>
+
+    </foaf:Person>
+
+    <foaf:Document rdf:about="https://kellycode.us/">
+
+        <foaf:primaryTopic>
+
+            <foaf:Project>
+
+                <foaf:name>KELLY CODE</foaf:name>
+
+                <foaf:homepage rdf:resource="https://kellycode.us/"/>
+
+            </foaf:Project>
+
+        </foaf:primaryTopic>
+
+    </foaf:Document>
+
+</rdf:RDF>
