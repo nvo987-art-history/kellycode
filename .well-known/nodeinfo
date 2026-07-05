@@ -1,0 +1,36 @@
+{
+  "version": "2.1",
+  "software": {
+    "name": "NEXARIUM",
+    "version": "1.0"
+  },
+  "protocols": [
+    "https",
+    "did:web",
+    "json-ld"
+  ],
+  "services": {
+    "inbound": [],
+    "outbound": []
+  },
+  "openRegistrations": false,
+  "usage": {
+    "users": {
+      "total": 1,
+      "activeHalfyear": 1,
+      "activeMonth": 1
+    },
+    "localPosts": 0
+  },
+  "metadata": {
+    "project": "KELLY CODE",
+    "description": "The Theory of Identity Survival",
+    "organization": "NVO987",
+    "ecosystem": "NEXARIUM",
+    "did": "did:web:identity.nvo987.us",
+    "website": "https://kellycode.us",
+    "research": "https://nvo987.us",
+    "infrastructure": "https://nexarium.us",
+    "lastUpdated": "2026-07-05"
+  }
+}
