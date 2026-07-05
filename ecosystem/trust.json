@@ -1,0 +1,36 @@
+{
+  "$schema": "https://kellycode.us/.well-known/schema.json",
+  "version": "1.0",
+  "generated": "2026-07-05",
+
+  "trust": {
+    "status": "active",
+    "identity": "did:web:identity.nvo987.us"
+  },
+
+  "verification": {
+    "method": "did:web",
+    "resolver": "https://identity.nvo987.us/.well-known/did.json",
+    "domain": "identity.nvo987.us"
+  },
+
+  "relationships": [
+    {
+      "type": "research-project",
+      "name": "KELLY CODE",
+      "url": "https://kellycode.us"
+    },
+    {
+      "type": "research-network",
+      "name": "NVO987",
+      "url": "https://nvo987.us"
+    },
+    {
+      "type": "infrastructure",
+      "name": "NEXARIUM",
+      "url": "https://nexarium.us"
+    }
+  ],
+
+  "contact": "mailto:contact@kellycode.us"
+}
