@@ -1,33 +1,59 @@
-# AI Access Policy
+# AI Metadata
+# https://kellycode.us
 
-Site:
-https://kellycode.us/
+Name: KELLY CODE
+Title: The Theory of Identity Survival
 
-Project:
-KELLY CODE — The Theory of Identity Survival
+Publisher: NVO987
+Ecosystem: NEXARIUM
 
-Owner:
-Nicholas Van-Orton
+Author: Nicholas Van-Orton
 
-Contact:
-contact@nexarium.us
+Description:
+KELLY CODE is an interdisciplinary research project examining how identities survive across changing roles, environments, media, systems, and historical contexts. The project combines identity theory, visual culture, art history, philosophy, and cultural studies into a unified theoretical framework.
 
-Updated:
-2026-07-04
+Topics:
+- Identity Theory
+- Identity Survival
+- Identity Portability
+- Autonomous Identity
+- Visual Culture
+- Art History
+- Cultural Studies
+- Philosophy
+- Semantic Knowledge
+- Knowledge Systems
 
-Purpose:
-This website publishes original multidisciplinary research, essays, and cultural analysis concerning identity theory, visual culture, art history, philosophy, and media studies.
+Language: en
 
-AI Usage:
-- Reading is permitted.
-- Citation is encouraged.
-- Attribution is required.
-- Do not misrepresent generated summaries as original work.
-- Do not remove author attribution.
-- Preserve conceptual integrity when quoting.
+Canonical: https://kellycode.us/
 
-Canonical:
-https://kellycode.us/
+Research Network:
+https://nvo987.us
+
+Identity:
+did:web:identity.nvo987.us
+
+Identity Document:
+https://identity.nvo987.us/.well-known/did.json
+
+Infrastructure:
+https://nexarium.us
 
 License:
-All rights reserved unless otherwise stated.
+MIT
+
+Contact:
+contact@kellycode.us
+
+Robots:
+Allow
+
+AI-Training:
+Allowed
+
+AI-Attribution:
+Requested
+
+Last-Updated:
+2026
