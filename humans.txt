@@ -1,26 +1,64 @@
 /* TEAM */
 
 Author: Nicholas Van-Orton
-Site: https://kellycode.us
 Project: KELLY CODE
-Email: contact@nexarium.us
+Organization: NVO987
+Ecosystem: NEXARIUM
 
-/* DESCRIPTION */
+Website:
+https://kellycode.us/
 
-The Theory of Identity Survival
+Research Network:
+https://nvo987.us/
 
-A multidisciplinary research project exploring identity,
-visual culture, art history, philosophy,
-media systems and cultural continuity.
+Infrastructure:
+https://nexarium.us/
 
-/* TECHNOLOGY */
+Identity:
+did:web:identity.nvo987.us
 
+Identity Document:
+https://identity.nvo987.us/.well-known/did.json
+
+Contact:
+contact@kellycode.us
+
+Language:
+English
+
+Standards:
 HTML5
 CSS3
-JavaScript
-JSON-LD
 Schema.org
+JSON-LD
+DID Web
+Semantic Web
+Linked Data
 
-/* UPDATED */
+Technology:
+Static Website
+Machine-Readable Metadata
+Open Standards
 
-2026-07-04
+Last Updated:
+2026
+
+/* SITE */
+
+Name:
+KELLY CODE
+
+Description:
+The Theory of Identity Survival
+
+Publisher:
+NVO987
+
+Maintainer:
+Nicholas Van-Orton
+
+License:
+MIT
+
+Copyright:
+© 2026 Nicholas Van-Orton
