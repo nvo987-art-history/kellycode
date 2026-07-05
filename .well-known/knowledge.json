@@ -1,0 +1,49 @@
+{
+  "$schema": "https://kellycode.us/schema/knowledge.json",
+  "version": "1.0",
+  "generated": "2026-07-05",
+
+  "knowledgeBase": {
+    "name": "KELLY CODE Knowledge Graph",
+    "website": "https://kellycode.us",
+    "language": "en",
+    "status": "active"
+  },
+
+  "identity": {
+    "did": "did:web:identity.nvo987.us",
+    "resolver": "https://identity.nvo987.us/.well-known/did.json"
+  },
+
+  "researchNetwork": {
+    "name": "NVO987",
+    "website": "https://nvo987.us"
+  },
+
+  "infrastructure": {
+    "name": "NEXARIUM",
+    "website": "https://nexarium.us"
+  },
+
+  "domains": [
+    "Identity Theory",
+    "Identity Survival",
+    "Visual Culture",
+    "Art History",
+    "Cultural Studies",
+    "Knowledge Representation",
+    "Semantic Metadata"
+  ],
+
+  "formats": [
+    "HTML",
+    "JSON-LD",
+    "Schema.org",
+    "DID",
+    "RDF"
+  ],
+
+  "license": "All Rights Reserved",
+
+  "contact": "mailto:contact@kellycode.us"
+}
