@@ -1,0 +1,30 @@
+{
+  "subject": "https://kellycode.us",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://kellycode.us/"
+    },
+    {
+      "rel": "canonical",
+      "href": "https://kellycode.us/"
+    },
+    {
+      "rel": "describedby",
+      "type": "application/did+json",
+      "href": "https://identity.nvo987.us/.well-known/did.json"
+    },
+    {
+      "rel": "author",
+      "href": "https://identity.nvo987.us"
+    },
+    {
+      "rel": "related",
+      "href": "https://nvo987.us"
+    },
+    {
+      "rel": "related",
+      "href": "https://nexarium.us"
+    }
+  ]
+}
