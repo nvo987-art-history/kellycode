@@ -1,0 +1,30 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<> a void:Dataset ;
+
+    dcterms:title "KELLY CODE — The Theory of Identity Survival" ;
+    dcterms:description "Research dataset describing the Kelly Code theory and its semantic relationships within the NVO987 and NEXARIUM ecosystem." ;
+    dcterms:created "2026-07-05" ;
+    dcterms:language "en" ;
+
+    foaf:homepage <https://kellycode.us/> ;
+
+    void:uriSpace "https://kellycode.us/" ;
+
+    dcterms:publisher [
+        a foaf:Organization ;
+        foaf:name "NVO987"
+    ] ;
+
+    dcterms:creator [
+        a foaf:Person ;
+        foaf:name "Nicholas Van-Orton"
+    ] ;
+
+    dcterms:identifier "did:web:identity.nvo987.us" ;
+
+    dcterms:relation <https://nvo987.us/> ;
+    dcterms:relation <https://nexarium.us/> ;
+    dcterms:relation <https://identity.nvo987.us/> .
