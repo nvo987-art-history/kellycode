@@ -1,0 +1,26 @@
+Contact: mailto:contact@kellycode.us
+Contact: mailto:contact@nexarium.us
+
+Expires: 2027-07-05T00:00:00Z
+
+Preferred-Languages: en
+
+Canonical: https://kellycode.us/.well-known/security.txt
+
+Policy: https://kellycode.us/SECURITY.md
+
+Acknowledgments: https://kellycode.us/README.md
+
+Hiring: https://nexarium.us
+
+Encryption: https://identity.nvo987.us/.well-known/did.json
+
+CSAF: https://kellycode.us
+
+Origin: https://kellycode.us
+
+Organization: KELLY CODE
+Organization: NVO987
+Infrastructure: NEXARIUM
+
+DID: did:web:identity.nvo987.us
