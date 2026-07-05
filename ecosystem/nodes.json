@@ -1,0 +1,33 @@
+{
+  "$schema": "https://kellycode.us/.well-known/schema.json",
+  "version": "1.0",
+  "generated": "2026-07-05",
+
+  "nodes": [
+    {
+      "name": "KELLY CODE",
+      "role": "Research Project",
+      "url": "https://kellycode.us",
+      "status": "active"
+    },
+    {
+      "name": "NVO987",
+      "role": "Research Network",
+      "url": "https://nvo987.us",
+      "status": "active"
+    },
+    {
+      "name": "NEXARIUM",
+      "role": "Infrastructure",
+      "url": "https://nexarium.us",
+      "status": "active"
+    },
+    {
+      "name": "Identity Infrastructure",
+      "role": "DID Service",
+      "url": "https://identity.nvo987.us",
+      "did": "did:web:identity.nvo987.us",
+      "status": "active"
+    }
+  ]
+}
