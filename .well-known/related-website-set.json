@@ -1,0 +1,22 @@
+{
+  "primary": "https://kellycode.us",
+  "generated": "2026-07-05",
+  "related": [
+    {
+      "name": "NVO987",
+      "url": "https://nvo987.us",
+      "relationship": "research-network"
+    },
+    {
+      "name": "NEXARIUM",
+      "url": "https://nexarium.us",
+      "relationship": "infrastructure"
+    },
+    {
+      "name": "Identity Infrastructure",
+      "url": "https://identity.nvo987.us",
+      "relationship": "did-provider",
+      "did": "did:web:identity.nvo987.us"
+    }
+  ]
+}
