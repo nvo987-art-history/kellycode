@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "generated": "2026-07-05",
+  "site": {
+    "name": "KELLY CODE",
+    "url": "https://kellycode.us"
+  },
+  "organization": {
+    "name": "NVO987"
+  },
+  "ecosystem": {
+    "name": "NEXARIUM",
+    "url": "https://nexarium.us"
+  },
+  "privacy": {
+    "globalPrivacyControl": true,
+    "respectSignal": true,
+    "dataSharing": false,
+    "personalization": false,
+    "tracking": false
+  },
+  "identity": {
+    "did": "did:web:identity.nvo987.us",
+    "resolver": "https://identity.nvo987.us/.well-known/did.json"
+  },
+  "contact": "mailto:contact@kellycode.us"
+}
