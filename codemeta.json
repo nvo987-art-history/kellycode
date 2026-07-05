@@ -1,0 +1,57 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "KELLY CODE",
+  "alternateName": "The Theory of Identity Survival",
+  "description": "KELLY CODE is an interdisciplinary research project exploring how identities survive across changing environments, roles, media, systems, and historical contexts.",
+  "identifier": "https://kellycode.us/",
+  "codeRepository": "https://kellycode.us/",
+  "url": "https://kellycode.us/",
+  "license": "https://opensource.org/licenses/MIT",
+  "version": "1.0.0",
+  "datePublished": "2026",
+  "dateModified": "2026",
+  "inLanguage": "en",
+  "keywords": [
+    "Identity Theory",
+    "Identity Survival",
+    "Visual Culture",
+    "Art History",
+    "Cultural Studies",
+    "Philosophy",
+    "Digital Humanities",
+    "Knowledge Systems",
+    "NVO987",
+    "NEXARIUM"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Nicholas Van-Orton"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "NVO987"
+  },
+  "maintainer": {
+    "@type": "Person",
+    "name": "Nicholas Van-Orton",
+    "email": "contact@kellycode.us"
+  },
+  "funding": "Independent Research",
+  "developmentStatus": "active",
+  "applicationCategory": "Research",
+  "operatingSystem": "Platform Independent",
+  "programmingLanguage": "HTML",
+  "isPartOf": {
+    "@type": "Organization",
+    "name": "NVO987",
+    "url": "https://nvo987.us/"
+  },
+  "relatedLink": [
+    "https://kellycode.us/",
+    "https://nvo987.us/",
+    "https://nexarium.us/",
+    "https://identity.nvo987.us/",
+    "https://identity.nvo987.us/.well-known/did.json"
+  ]
+}
