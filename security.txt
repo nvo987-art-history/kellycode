@@ -1,0 +1,20 @@
+Contact: mailto:contact@kellycode.us
+Expires: 2027-01-01T00:00:00Z
+Preferred-Languages: en
+Canonical: https://kellycode.us/security.txt
+Policy: https://kellycode.us/SECURITY.md
+Acknowledgments: https://kellycode.us/
+Hiring: https://nvo987.us/
+CSAF: https://kellycode.us/
+
+# Identity
+Encryption: https://identity.nvo987.us/.well-known/did.json
+
+# Publisher
+Organization: NVO987
+
+# Infrastructure
+Infrastructure: https://nexarium.us/
+
+# Research
+Project: KELLY CODE
