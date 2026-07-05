@@ -1,0 +1,10 @@
+{
+  "@context": "https://identity.foundation/.well-known/did-configuration/v1",
+  "linked_dids": [
+    {
+      "issuer": "did:web:identity.nvo987.us",
+      "subject": "https://kellycode.us",
+      "relationship": "linked-domain"
+    }
+  ]
+}
