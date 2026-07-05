@@ -1,0 +1,35 @@
+{
+  "$schema": "https://kellycode.us/.well-known/schema.json",
+  "version": "1.0",
+  "generated": "2026-07-05",
+
+  "project": {
+    "name": "KELLY CODE",
+    "title": "The Theory of Identity Survival",
+    "website": "https://kellycode.us",
+    "language": "en"
+  },
+
+  "identity": {
+    "did": "did:web:identity.nvo987.us",
+    "resolver": "https://identity.nvo987.us/.well-known/did.json"
+  },
+
+  "creator": {
+    "name": "Nicholas Van-Orton"
+  },
+
+  "organization": {
+    "name": "NVO987",
+    "website": "https://nvo987.us"
+  },
+
+  "ecosystem": {
+    "name": "NEXARIUM",
+    "website": "https://nexarium.us"
+  },
+
+  "contact": {
+    "email": "contact@kellycode.us"
+  }
+}
