@@ -1,0 +1,27 @@
+{
+  "subject": "did:web:identity.nvo987.us",
+  "aliases": [
+    "https://identity.nvo987.us",
+    "https://kellycode.us"
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "type": "application/did+json",
+      "href": "https://identity.nvo987.us/.well-known/did.json"
+    },
+    {
+      "rel": "canonical",
+      "href": "https://kellycode.us/"
+    },
+    {
+      "rel": "author",
+      "href": "https://identity.nvo987.us"
+    },
+    {
+      "rel": "describedby",
+      "type": "application/ld+json",
+      "href": "https://kellycode.us/"
+    }
+  ]
+}
