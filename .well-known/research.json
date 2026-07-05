@@ -1,0 +1,43 @@
+{
+  "$schema": "https://kellycode.us/schema/research.json",
+  "version": "1.0",
+  "generated": "2026-07-05",
+
+  "project": {
+    "name": "KELLY CODE",
+    "subtitle": "The Theory of Identity Survival",
+    "website": "https://kellycode.us",
+    "status": "active",
+    "language": "en"
+  },
+
+  "research": {
+    "field": [
+      "Identity Theory",
+      "Visual Culture",
+      "Art History",
+      "Cultural Studies",
+      "Philosophy of Identity"
+    ],
+    "focus": "Identity survival across changing roles, media, systems and historical contexts.",
+    "type": "Independent Research"
+  },
+
+  "author": {
+    "name": "Nicholas Van-Orton",
+    "did": "did:web:identity.nvo987.us"
+  },
+
+  "organization": {
+    "name": "NVO987",
+    "website": "https://nvo987.us"
+  },
+
+  "ecosystem": {
+    "name": "NEXARIUM",
+    "website": "https://nexarium.us"
+  },
+
+  "license": "All Rights Reserved",
+  "contact": "mailto:contact@kellycode.us"
+}
