@@ -1,0 +1,73 @@
+cff-version: 1.2.0
+
+title: "KELLY CODE: The Theory of Identity Survival"
+
+message: >
+  If you use this work in academic research,
+  please cite it using the metadata provided in this file.
+
+type: article
+
+authors:
+  - family-names: "Van-Orton"
+    given-names: "Nicholas"
+    orcid: "https://orcid.org/0009-0007-4628-1871"
+
+abstract: >
+  KELLY CODE is a multidisciplinary research project investigating
+  how identities survive changes in environments, roles, systems,
+  and historical contexts. The work integrates visual culture,
+  art history, cultural studies, philosophy, and identity theory
+  into a unified framework describing long-term identity continuity.
+
+keywords:
+  - Identity Theory
+  - Identity Survival
+  - Kelly Code
+  - Visual Culture
+  - Art History
+  - Cultural Studies
+  - Philosophy
+  - Sonia Delaunay
+  - Grace Kelly
+  - Jacqueline Kennedy
+  - Emma Bunton
+  - Rosalía
+  - Alfred Hitchcock
+  - NVO987
+
+license: "All Rights Reserved"
+
+repository-code: "https://github.com/NVO987/kellycode"
+
+url: "https://kellycode.us"
+
+repository-artifact: "https://kellycode.us"
+
+identifiers:
+  - type: url
+    value: "https://kellycode.us"
+
+  - type: doi
+    value: "Pending"
+
+preferred-citation:
+  type: article
+
+  authors:
+    - family-names: "Van-Orton"
+      given-names: "Nicholas"
+
+  title: "KELLY CODE: The Theory of Identity Survival"
+
+  year: 2026
+
+  publisher:
+    name: "NVO987"
+
+  url: "https://kellycode.us"
+
+  notes: >
+    Published as part of the NVO987 research,
+    culture and knowledge network within
+    the NEXARIUM ecosystem.
