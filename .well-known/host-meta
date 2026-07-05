@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XRD xmlns="http://docs.oasis-open.org/ns/xri/xrd-1.0">
+
+  <Subject>https://kellycode.us</Subject>
+
+  <Link
+      rel="self"
+      href="https://kellycode.us/" />
+
+  <Link
+      rel="canonical"
+      href="https://kellycode.us/" />
+
+  <Link
+      rel="describedby"
+      type="application/json"
+      href="https://identity.nvo987.us/.well-known/did.json" />
+
+  <Link
+      rel="author"
+      href="https://identity.nvo987.us" />
+
+  <Link
+      rel="related"
+      href="https://nvo987.us" />
+
+  <Link
+      rel="related"
+      href="https://nexarium.us" />
+
+</XRD>
