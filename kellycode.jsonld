@@ -11,17 +11,17 @@
       "datePublished": "2026-06-26",
       "dateModified": "2026-06-26",
       "publisher": {
-        "@id": "https://kellycode.us/#organization"
+        "@id": "https://nvo987.fr/#organization"
       }
     },
     {
       "@type": "Organization",
-      "@id": "https://kellycode.us/#organization",
+      "@id": "https://nvo987.fr/#organization",
       "name": "KELLY CODE",
       "url": "https://kellycode.us/",
       "email": "contact@kellycode.us",
       "founder": {
-        "@id": "https://kellycode.us/#author"
+        "@id": "https://nvo987.us/#person"
       },
       "sameAs": [
         "https://studies.kellycode.us/",
@@ -31,11 +31,11 @@
     },
     {
       "@type": "Person",
-      "@id": "https://kellycode.us/#author",
+      "@id": "https://nvo987.us/#person",
       "name": "Nicholas Van-Orton",
       "email": "contact@kellycode.us",
       "identifier": "did:web:identity.nvo987.us",
-      "url": "https://nexarium.us/",
+      "url": "https://nvo987.us/",
       "sameAs": [
         "https://identity.nvo987.us/",
         "https://nexarium.us/"
@@ -68,7 +68,7 @@
       "dateModified": "2026-06-26",
       "copyrightYear": 2026,
       "copyrightHolder": {
-        "@id": "https://kellycode.us/#author"
+        "@id": "https://nvo987.us/#person"
       },
       "genre": [
         "Identity Theory",
@@ -90,13 +90,13 @@
       ],
       "inLanguage": "en",
       "author": {
-        "@id": "https://kellycode.us/#author"
+        "@id": "https://nvo987.us/#person"
       },
       "creator": {
-        "@id": "https://kellycode.us/#author"
+        "@id": "https://nvo987.us/#person"
       },
       "publisher": {
-        "@id": "https://kellycode.us/#organization"
+        "@id": "https://nvo987.fr/#organization"
       },
       "mainEntityOfPage": {
         "@id": "https://kellycode.us/#webpage"
@@ -111,13 +111,13 @@
       "dateModified": "2026-06-26",
       "copyrightYear": 2026,
       "author": {
-        "@id": "https://kellycode.us/#author"
+        "@id": "https://nvo987.us/#person"
       },
       "creator": {
-        "@id": "https://kellycode.us/#author"
+        "@id": "https://nvo987.us/#person"
       },
       "publisher": {
-        "@id": "https://kellycode.us/#organization"
+        "@id": "https://nvo987.fr/#organization"
       },
       "about": {
         "@id": "https://kellycode.us/#theory"
